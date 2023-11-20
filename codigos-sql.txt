@@ -56,7 +56,7 @@ INSERT into alunos values(null, "ramon", 2997880);
 INSERT into contato values(null, "fone", 2997880, 1);
 INSERT into endereco values(null, "beco das almas", 29, "psj", "mpe", "ce", 1);
 
-// consulta inner join
+// consulta inner join (20-11-23)
 SELECT 
 	nome, rua, 
 	numero, bairro, 
