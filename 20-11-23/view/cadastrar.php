@@ -14,9 +14,11 @@
         <div class="caixas">
             <form action="../control/controleUsuario.php" method="POST">
                 <div class="linha">
+                    <label for="nome">Informe seu nome</label>
                     <input type="text" name="nome" id="nome" placeholder="">
                 </div>
                 <div class="linha">
+                    <label for="cpf">Qual seu CPF?</label>
                     <input type="text" name="cpf" id="cpf">
                 </div>
                 <div class="linha">
@@ -25,19 +27,25 @@
                         <option value="whats">Whats</option>
                         <option value="fone">Fone</option>
                     </select>
-                    <input type="text" name="valorContato" id="valorContato">
+                    <input type="text" name="valorContato" id="valorContato" placeholder="Coloque o valor do seu contato">
                 </div>
                 <div class="linha">
-                    <input type="text" name="rua">
+                    <label for="rua">Qual sua rua?</label>
+                    <input type="text" id="rua" name="rua">
                 </div>
                 <div class="linha">
-                    <input type="text" name="numero">
+                    <label for="numero">Numero:</label>
+                    <input type="text" name="numero" id="numero">
                 </div>
                 <div class="linha">
-                    <input type="text" name="bairro">
+                <label for="nome">Informe seu bairro:</label>
+
+                    <input type="text" name="bairro" id="bairro">
                 </div>
                 <div class="linha">
-                    <input type="text" name="cidade">
+                <label for="cidade">Informe sua cidade:</label>
+
+                    <input type="text" name="cidade" id="cidade">
                 </div>
                 <div class="linha">
                     <input type="text" name="UF">
