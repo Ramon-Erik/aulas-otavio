@@ -1,0 +1,38 @@
+-----------------------------------------------------------------------------------------
+					DDL
+create database salaberga1;
+use salaberga1;
+
+create table alunos(
+	id int primary key not null auto_increment,
+	nome varchar(200);
+);
+
+alter table alunos add matricula int;
+
+alter table alunos change matricula matr char(5);
+
+OU alter table alunos rename to aluno;
+OU rename table  alunos to aluno;
+
+alter table aluno modfy matr int;
+
+alter table aluno drop matr;
+
+alter table alunos add matr int;
+
+-----------------------------------------------------------------------------------------
+
+INSERT into aluno values(null, "ramon", 2997880);
+
+update aluno set nome="claudia" where id=3;
+
+select * from aluno where nome="ramon";
+select * from aluno order by id desc;
+
+-----------------------------------------------------------------------------------------
+20/11/23
+
+create TABLE alunos( id int PRIMARY key not null AUTO_INCREMENT, nome varchar(200), matricula char(3) );
+create TABLE contato( id int PRIMARY key not null AUTO_INCREMENT, tipo ENUM ("whatsApp", "fone","email"), valor varchar(50), id_aluno INT, FOREIGN KEY (id_aluno) REFERENCES alunos(id) );
+create TABLE endereco( id int PRIMARY key not null AUTO_INCREMENT, rua varchar(100), numero varchar(20), bairro varchar(40), cidade varchar(40), uf char(2), id_aluno int, FOREIGN key (id_aluno) REFERENCES alunos(id) );
