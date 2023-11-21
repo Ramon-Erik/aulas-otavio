@@ -22,6 +22,8 @@ if (isset($_POST['btn'])) {
             $bairro       = $_POST['bairro']; 
             $cidade       = $_POST['cidade'];
             $uf           = $_POST['uf'];
+
+            // Echo $nome, $senha, $cpf, $matricula, $tipoContato, $valorContato, $rua, $num,$bairro, $cidade, $uf;
             
             $user->cadastrar($nome, $senha, $cpf, $matricula, 
                             $tipoContato, $valorContato,
