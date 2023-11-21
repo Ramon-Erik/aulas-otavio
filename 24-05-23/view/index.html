@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Banco do Br</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Faça login com a sua conta no banco do Br</h1>
+        <form action="../control/controll-index.php" method="post">
+            <div class="linha">
+                <label for="iEmail">Email:</label>
+                <input type="email" name="email" id="iEmail">
+            </div>
+            <div class="linha">
+                <label for="iSenha">Senha:</label>
+                <input type="password" name="senha" id="iSenha">
+            </div>
+            <div class="linha">
+                <input type="submit" name="btn_logar" value="Logar">
+                <input type="hidden" name="index">
+            </div>
+        </form>
+        <div style="text-align: center;">Desenvolvido por <a href="http://github.com/Ramon-Erik" target="_blank" rel="noopener noreferrer">Ramon Erik - 2°B</a></div>
+    </main>
+</body>
+</html>

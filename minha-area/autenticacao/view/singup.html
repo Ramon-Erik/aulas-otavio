@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar | SSPCS</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main>
+        <div class="titulo">
+            <h1>Crie uma nova conta!</h1>
+        </div>
+        <form action="../control/controleUsuario.php" method="post">
+            <div class="linha">
+                <label for="nomeCadId">Nome</label>
+                <input type="text" name="nomeCad" id="nomeCadId">
+            </div>
+            <div class="linha">
+                <label for="cpfCadId">CPF</label>
+                <input type="senha" name="cpfCad" id="cpfCadId">
+            </div>
+            <div class="linha">
+                <input type="text" name="valorContatoCad" id="valorContato" placeholder="Insira um contato do tipo">
+                <select name="tipoContatoCad" id="tipoContato">
+                    <option value="email">Email</option>
+                    <option value="whats">Whats</option>
+                    <option value="fone">Fone</option>
+                </select>
+            </div>
+        </div>
+        <div class="linha">
+            <label for="ruaCad">Rua</label>
+            <input type="text" name="ruaCad" id="ruaCad">
+        </div>
+        <div class="linha">
+            <label for="numeroCad">Numero</label>
+            <input type="text" name="numeroCad" id="numeroCad">
+        </div>
+        <div class="linha">
+            <label for="bairroCad">Bairro</label>
+            <input type="text" name="bairroCad" id="bairroCad">
+        </div>
+        <div class="linha">
+            <label for="cidadeCad">Cidade</label>
+            <input type="text" name="cidadeCad" id="cidadeCad">
+        </div>
+        <div class="linha">
+            <label for="ufCad">UF</label>
+            <input type="text" name="ufCad" id="ufCad">
+        </div>
+            <div class="linha">
+                <label for="senhaCadId">Senha</label>
+                <input type="password" name="senhaCad" id="senhaCadId">
+            </div>
+            <div class="linha">
+                <input type="hidden" name="id" value="telaCad">
+                <input type="submit" value="Cadastrar" name="btn">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

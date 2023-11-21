@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SSPCS</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main>
+        <div class="titulo">
+            <h1>Faça login na sua conta!</h1>
+        </div>
+        <form action="../control/controleUsuario.php" method="post">
+            <div class="linha">
+                <label for="cpfLogin">cpf</label>
+                <input type="text" name="cpfLogin" id="cpfLogin">
+            </div>
+            <div class="linha">
+                <label for="senhaLoginId">Senha</label>
+                <input type="password" name="senhaLogin" id="senhaLoginId">
+            </div>
+            <div class="linha">
+                <input type="hidden" name="id" value="telaLogin">
+                <input type="submit" value="Login" name="btn">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
