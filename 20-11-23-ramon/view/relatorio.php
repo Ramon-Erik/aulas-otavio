@@ -9,9 +9,9 @@
 <body>
     <table>
         <tr>
-            <td>nome</td>
-            <td>cpf</td>
-            <td>contato</td>
+            <th>nome</th>
+            <th>cpf</th>
+            <th>contato</th>
         </tr>
     <?php 
         try {
