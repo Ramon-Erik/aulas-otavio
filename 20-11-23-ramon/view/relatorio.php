@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/relatorio.css">
     <title>Relatório de usuários</title>
 </head>
 <body>
     <table>
+        <tr>
+            <td>nome</td>
+            <td>cpf</td>
+            <td>contato</td>
+        </tr>
     <?php 
         try {
             $pdo = new PDO("mysql:dbname=crud_info;host=localhost", "root", "");
-            $consulta = $pdo->prepare("SELECT * FROM usuarios;");
+            $consulta = $pdo->prepare("select nome, cpf, valor from usuarios inner join contatos on usuarios.id = contatos.id_usuario");
             $consulta->execute();
             $res = $consulta->fetchAll(PDO::FETCH_ASSOC);
             foreach ($res as $linha) {
