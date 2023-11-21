@@ -20,6 +20,12 @@ if (isset($_POST['btn'])) {
         case '2':
             $x->relatorio();
             break;
+
+        //relatorio de notas
+        case '2.1':
+            $x->relatorioNotas();
+            break;
+            
         //Recuperar senha
         case '3':
         $email = $_POST['email'];
