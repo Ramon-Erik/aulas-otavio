@@ -1,5 +1,23 @@
+table {
+    border-collapse: collapse;
+}
+th, caption, .destaque{
+    background-color: lightgray;
+}
 td, th, caption {
     border: 2px solid black;
-    text-align: center;
     padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: rgb(221, 221, 221);
+}
+#container {
+    /* SO PARA DEIXAr o exemplo visivel sem ORECISAR DIMINUIR O TAMANHO DO NAVEGADOR */
+    width: 50vh;
+    /* Isso cria uma barra de rolagem horizontal na tabela caso ela fique grande demais --AUTO-- */
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
 }
