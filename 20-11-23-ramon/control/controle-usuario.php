@@ -16,6 +16,7 @@ if (isset($_POST['btn'])) {
 
             $tipoContato  = $_POST['tipoContato'];
             $valorContato = $_POST['valorContato'];
+            
             $rua          = $_POST['rua'];
             $num          = $_POST['numero'];
             $bairro       = $_POST['bairro']; 
