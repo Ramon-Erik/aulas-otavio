@@ -28,3 +28,45 @@ create table enderecos (
     id_usuario int,
     foreign key (id_usuario) references usuarios(id)
 );
+
+-- Inserir 10 usuários com dados fictícios na tabela "usuarios"
+INSERT INTO usuarios (nome, cpf, senha, matricula)
+VALUES 
+('João Silva', '111.111.111-11', 'senha123', '1234567'),
+('Maria Santos', '222.222.222-22', 'abc123', '7654321'),
+('Pedro Oliveira', '333.333.333-33', 'qwerty', '9876543'),
+('Ana Souza', '444.444.444-44', '987654', '3456789'),
+('Carlos Ferreira', '555.555.555-55', 'p@ssw0rd', '6789123'),
+('Julia Costa', '666.666.666-66', 'pass123', '4321987'),
+('Lucas Pereira', '777.777.777-77', 'lucas123', '8912345'),
+('Camila Almeida', '888.888.888-88', 'senha456', '6543219'),
+('Felipe Mendes', '999.999.999-99', 'feli123', '1237890'),
+('Amanda Martins', '101.101.101-01', 'martins321', '9876543');
+
+-- Inserir dados de contato para os 10 usuários na tabela "contatos"
+INSERT INTO contatos (valor, tipo_contato, id_usuario)
+VALUES 
+('joao@gmail.com', 'email', 1),
+('maria@hotmail.com', 'email', 2),
+('pedro@outlook.com', 'email', 3),
+('ana@yahoo.com', 'email', 4),
+('carlos@live.com', 'email', 5),
+('julia@gmail.com', 'email', 6),
+('lucas@hotmail.com', 'email', 7),
+('camila@yahoo.com', 'email', 8),
+('felipe@outlook.com', 'email', 9),
+('amanda@gmail.com', 'email', 10);
+
+-- Inserir dados de endereço para os 10 usuários na tabela "enderecos"
+INSERT INTO enderecos (rua, numero, bairro, cidade, UF, id_usuario)
+VALUES 
+('Rua A', '123', 'Centro', 'São Paulo', 'SP', 1),
+('Rua B', '456', 'Bela Vista', 'Rio de Janeiro', 'RJ', 2),
+('Rua C', '789', 'Copacabana', 'Porto Alegre', 'RS', 3),
+('Rua D', '1011', 'Barra da Tijuca', 'Brasília', 'DF', 4),
+('Rua E', '1213', 'Leblon', 'Belo Horizonte', 'MG', 5),
+('Rua F', '1415', 'Ipanema', 'Salvador', 'BA', 6),
+('Rua G', '1617', 'Jardins', 'Curitiba', 'PR', 7),
+('Rua H', '1819', 'Gávea', 'Fortaleza', 'CE', 8),
+('Rua I', '2021', 'Botafogo', 'Recife', 'PE', 9),
+('Rua J', '2223', 'Flamengo', 'Manaus', 'AM', 10);
