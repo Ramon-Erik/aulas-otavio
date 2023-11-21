@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Entre na sua conta!</title>
+</head>
+<body>
+    <main>
+        <div class="linha linha-titulo">
+            <h1>Entre na sua conta!</h1>
+        </div>
+        <form action="../control/controle-usuario.php" method="post">
+            <div class="parte-form">
+                <div class="linha">
+                    <label for="cpfId">Seu CPF</label>
+                    <input type="text" name="cpfLogin" id="cpfId">
+                </div>
+            </div>
+            <div class="parte-form">
+                <div class="linha">
+                    <label for="senhaId">Sua senha</label>
+                    <input type="password" name="senha" id="senhaId">
+                </div>
+            </div>
+            <div class="parte-form">
+                <div class="linha">
+                    <input type="hidden" name="id" value="telaLogin">
+                    <input type="submit" value="Login" name="btn">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
