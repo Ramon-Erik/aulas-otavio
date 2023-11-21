@@ -70,3 +70,61 @@ VALUES
 ('Rua H', '1819', 'Gávea', 'Fortaleza', 'CE', 8),
 ('Rua I', '2021', 'Botafogo', 'Recife', 'PE', 9),
 ('Rua J', '2223', 'Flamengo', 'Manaus', 'AM', 10);
+
+-- Inserir 10 usuários adicionais com dados repetidos para cidade e rua e contatos do tipo "numero"
+INSERT INTO usuarios (nome, cpf, senha, matricula)
+VALUES 
+('Fernanda Oliveira', '121.121.121-21', 'senha456', '1234567'),
+('Rafael Almeida', '131.131.131-31', 'abcd123', '7654321'),
+('Larissa Santos', '141.141.141-41', 'senha789', '9876543'),
+('Gustavo Pereira', '151.151.151-51', '1234567', '3456789'),
+('Mariana Souza', '161.161.161-61', 'senha890', '6789123'),
+('Rodrigo Martins', '171.171.171-71', 'abcde123', '4321987'),
+('Fernando Costa', '181.181.181-81', 'senha890', '8912345'),
+('Vivian Mendes', '191.191.191-91', 'pass987', '6543219'),
+('Luciana Silva', '202.202.202-02', 'abcdef12', '1237890'),
+('Patricia Rodrigues', '212.212.212-12', 'senha345', '9876543');
+
+-- Inserir dados de contato do tipo "numero" para os 10 usuários adicionais na tabela "contatos"
+INSERT INTO contatos (valor, tipo_contato, id_usuario)
+VALUES 
+('11 985343679', 'numero', 11),
+('19 985343679', 'numero', 12),
+('21 985343679', 'numero', 13),
+('47 985343679', 'numero', 14),
+('51 985343679', 'numero', 15),
+('61 985343679', 'numero', 16),
+('71 985343679', 'numero', 17),
+('81 985343679', 'numero', 18),
+('85 985343679', 'numero', 19),
+('91 985343679', 'numero', 20);
+
+-- Inserir dados de endereço repetidos para os 10 usuários adicionais na tabela "enderecos"
+INSERT INTO enderecos (rua, numero, bairro, cidade, UF, id_usuario)
+VALUES 
+('Rua A', '123', 'Centro', 'São Paulo', 'SP', 11),
+('Rua B', '456', 'Bela Vista', 'São Paulo', 'SP', 12),
+('Rua C', '789', 'Copacabana', 'Rio de Janeiro', 'RJ', 13),
+('Rua D', '1011', 'Barra da Tijuca', 'Rio de Janeiro', 'RJ', 14),
+('Rua E', '1213', 'Leblon', 'Belo Horizonte', 'MG', 15),
+('Rua F', '1415', 'Ipanema', 'Belo Horizonte', 'MG', 16),
+('Rua G', '1617', 'Jardins', 'Curitiba', 'PR', 17),
+('Rua H', '1819', 'Gávea', 'Curitiba', 'PR', 18),
+('Rua I', '2021', 'Botafogo', 'Recife', 'PE', 19),
+('Rua J', '2223', 'Flamengo', 'Recife', 'PE', 20);
+
+UPDATE contatos
+SET valor = 
+    CASE 
+        WHEN id_usuario = 11 THEN '11 988765432'
+        WHEN id_usuario = 12 THEN '21 977654321'
+        WHEN id_usuario = 13 THEN '31 966543210'
+        WHEN id_usuario = 14 THEN '41 955432109'
+        WHEN id_usuario = 15 THEN '51 944321098'
+        WHEN id_usuario = 16 THEN '61 933210987'
+        WHEN id_usuario = 17 THEN '71 922109876'
+        WHEN id_usuario = 18 THEN '81 911098765'
+        WHEN id_usuario = 19 THEN '85 900987654'
+        WHEN id_usuario = 20 THEN '91 989876543'
+    END
+WHERE id_usuario BETWEEN 11 AND 20;
