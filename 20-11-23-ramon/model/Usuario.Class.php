@@ -44,8 +44,6 @@ class Usuario {
         try {
             $pdo = new pdo("mysql:host=localhost; dbname=crud_info", "root", "");
             $consulta = 'select * from usuarios where cpf = :cpf and senha = :senha';
-            // echo "cpf: " . $cpfLogin . "<br>";
-            // echo "sen: " . $senha . "<br>";
             
             $consultar = $pdo->prepare($consulta);
             $consultar->bindValue(":cpf", $cpfLogin);
@@ -53,9 +51,12 @@ class Usuario {
             $consultar->execute();
             $resultado = $consultar->fetch(PDO::FETCH_ASSOC);
             
-            var_dump($resultado);
             if ($resultado['senha'] == $senha) {
-                header("https://google.com");
+                if ($senha == 'abc123') { #usuario id 2
+                    header("location: ../view/relatorio.php");
+                } else {
+                    header("location: https://google.com");
+                }
             } else  {
                 var_dump($resultado);
             }
