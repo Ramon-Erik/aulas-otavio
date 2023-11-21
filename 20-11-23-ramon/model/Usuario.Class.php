@@ -42,7 +42,7 @@ class Usuario {
     }
     public function login($cpfLogin, $senha) {
         try {
-            $pdo = new pdo("mysql:host=localhost; dbname=pr_autenticacao", "root", "");
+            $pdo = new pdo("mysql:host=localhost; dbname=crud_info", "root", "");
             $consulta = 'select * from usuarios where cpf = :cpf and senha = :senha';
             // echo "cpf: " . $cpfLogin . "<br>";
             // echo "sen: " . $senha . "<br>";
@@ -54,8 +54,8 @@ class Usuario {
             $resultado = $consultar->fetch(PDO::FETCH_ASSOC);
             
             var_dump($resultado);
-            if (count($resultado) == 4) {
-                header("location:../view/minha-area.php?cpf=$cpfLogin");
+            if ($resultado['senha'] == $senha) {
+                header("https://google.com");
             } else  {
                 var_dump($resultado);
             }
