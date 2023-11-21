@@ -13,6 +13,9 @@
             <form action="../control/controleUsuario.php" method="POST"> 
                 <input type="submit" name="btn" value="Relatorio Usuario"> 
                 <input type="hidden" name="id" value="2"> 
+
+                <input type="submit" name="btn" value="Relatorio notas"> 
+                <input type="hidden" name="id" value="2.1"> 
             </form>
         </div>
     </main>
