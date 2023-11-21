@@ -16,7 +16,7 @@ class Usuario {
             $id_ultimo_func->execute();
             $id_func = $id_ultimo_func->fetch(PDO::FETCH_ASSOC);
 
-            $consulta = "insert into contatos values(null, :tipo, :valor, :id_usuario)";
+            $consulta = "insert into contatos values(null, :valor ,:tipo, :id_usuario)";
             $consultar = $pdo->prepare($consulta);
             $consultar->bindValue(":tipo", $tipoContato);
             $consultar->bindValue(":valor", $valorContato);
