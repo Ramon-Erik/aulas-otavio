@@ -6,6 +6,7 @@
     <title>Relatório de usuários</title>
 </head>
 <body>
+    <table>
     <?php 
         try {
             $pdo = new PDO("mysql:dbname=crud_info;host=localhost", "root", "");
@@ -13,10 +14,11 @@
             $consulta->execute();
             $res = $consulta->fetchAll(PDO::FETCH_ASSOC);
             foreach ($res as $linha) {
-                foreach ($linha as $chave => $valor) {
-                    echo $chave . ": " . $valor . "<br>";
+                echo "<tr>";
+                foreach ($linha as $valor) {
+                    echo "<td>" . $valor . "</td>";
                 }
-                echo "<br><hr><br>";
+                echo "</tr>";
             }
         } catch (PDOException $e) {
             echo "Falha ao acessar o banco " . $e->getMessage();
@@ -24,5 +26,6 @@
             echo "Falha ao carregar a página" . $e->getMessage();
         }
     ?>
+    </table>
 </body>
 </html>
