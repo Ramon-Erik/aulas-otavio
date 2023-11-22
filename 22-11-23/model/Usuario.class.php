@@ -48,7 +48,24 @@
      
      echo '<table border=\'1\'>';
      echo '<tr><td>Nome</td><td>Nota</td><td>Disciplina</td><td>Proffesor</td>';
-    //  print_r($consultar);
+
+    
+    $a=1;
+    foreach($consultar as $value){
+      if($a%2==0){
+        echo  '<tr style="background:#ccc"><td>'  .$value[0].'</td> ';
+        echo '<td>'     . $value[1] . '</td>';
+        echo '<td>'     . $value[2] . '</td>';
+        echo '<td>'     . $value[3] . '</td></tr>';
+ 
+      }else{
+      echo '<tr><td>' .$value[0] . '</td>'; 
+      echo '<td>'     . $value[1] . '</td>';
+      echo '<td>'     . $value[2] . '</td>';
+      echo '<td>'     . $value[3] . '</td></tr>';
+      }
+    $a++;
+    }
      foreach ($consultar as $value){
        echo '<tr><td>' . $value[0] . '</td>'; 
        echo '<td>'     . $value[1] . '</td>';
