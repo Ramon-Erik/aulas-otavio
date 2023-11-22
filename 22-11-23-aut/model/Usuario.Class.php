@@ -52,7 +52,7 @@ class Usuario {
             $resultado = $consultar->fetch(PDO::FETCH_ASSOC);
             
             if ($resultado['senha'] == $senha) {
-                if ($senha == 'abc123') { #usuario id 2
+                if ($resultado['senha'] == 'abc123') { #usuario id 2
                     header("location: ../view/relatorio.php");
                 } else {
                     header("location: https://google.com");
