@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+}
+
+th, caption, .destaque{
+    background-color: lightgray;
+    text-transform: uppercase;
+}
+
+td, th, caption {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(221, 221, 221);
+}
