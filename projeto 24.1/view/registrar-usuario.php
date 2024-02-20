@@ -25,7 +25,7 @@
             </div>
             <div class="linha">
                 <label for="senhaId">Seu senha</label>
-                <input type="password" name="senha" id="senhaID" required>
+                <input type="password" name="senha" id="senhaId" required>
             </div>
             <input type="submit" name="cadastro_usuario" value="Cadastrar">
         </form>
