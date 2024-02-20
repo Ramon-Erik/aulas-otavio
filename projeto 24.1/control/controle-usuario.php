@@ -1,12 +1,13 @@
 <?php
+require("../model/Usuario.Class.php");
 if(isset($_POST['cadastro_usuario'])){
     $tipo = $_POST['tipo'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // $x = new Registro();
-    echo $tipo. '<br>';
-    echo $senha. '<br>';
-    echo $email. '<br>';
+    $usuario = new Usuario('', '');
+    $usuario->cadastrar_usuario($email, $senha, $tipo);
+
+
 }
 ?>
