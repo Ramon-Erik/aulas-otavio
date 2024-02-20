@@ -1,0 +1,9 @@
+create table registro(
+	id int PRIMARY key not null AUTO_INCREMENT,
+    motivo enum("lanche", "banheiro"),
+    data date,
+    id_aluno int,
+    id_usuario int,
+    FOREIGN key (id_aluno) references aluno(id),
+    FOREIGN key (id_usuario) references usuario(id)
+);
