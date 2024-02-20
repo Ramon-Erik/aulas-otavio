@@ -4,7 +4,7 @@ class Registro {
     public function cadastrar_registro($ano, $turma, $nome, $motivo) {
      
             $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
-            $consulta = "INSERT INTO `registro` VALUES (null,':motivo', curdate(),':id_aluno','id_usuario')";
+            $consulta = "INSERT INTO `registro` VALUES (null,':motivo', curdate(),':id_aluno',':id_usuario')";
 
             $consulta_feita = $pdo->prepare($consulta);
             $consulta_feita->bindValue(":nome", $nome);
