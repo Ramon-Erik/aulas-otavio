@@ -4,7 +4,7 @@ class Usuario {
     public function cadastrar_usuario($tipo, $senha, $email) {
 
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
-        $consulta = "INSERT INTO `usuario` VALUES (null,':email', ':senha',':tipo')";
+        $consulta = "INSERT INTO usuario VALUES (null, :email, :senha, :tipo)";
 
         $consulta_feita = $pdo->prepare($consulta);
         $consulta_feita->bindValue(":email", $email);
@@ -33,6 +33,6 @@ class Usuario {
         // $consultar->bindValue(":id_usuario", $id_func['id']);
         // $consultar->execute();
 
-        header('location:../view/login.html');
+        // header('location:../view/login.html');
     }
 }

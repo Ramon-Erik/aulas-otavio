@@ -6,8 +6,6 @@ if(isset($_POST['cadastro_usuario'])){
     $senha = $_POST['senha'];
 
     $usuario = new Usuario('', '');
-    $usuario->cadastrar_usuario($email, $senha, $tipo);
-
-
+    $usuario->cadastrar_usuario($tipo, $senha, $email);
 }
 ?>
