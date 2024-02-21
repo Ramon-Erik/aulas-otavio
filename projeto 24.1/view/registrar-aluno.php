@@ -30,7 +30,7 @@
                     <option value="D">D</option>
                 </select>
             </div>
-            <input type="submit" name="cadastro_aluno" value="Cadastrar">
+            <div class="linha"><input type="submit" name="cadastro_aluno" value="Cadastrar"></div>
         </form>
     </main>
 </body>

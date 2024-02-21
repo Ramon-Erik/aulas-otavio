@@ -5,12 +5,25 @@ body {
 main {
     margin: auto;
     width: fit-content;
+    text-align: center;
 }
 
-input[type="text"] {
+div.linha {
+    display: flex;
+    justify-content: center;
+}
+
+div.linha label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     display: block;
     width: 400px;
     margin: 5px;
+    padding: 5px;
 }
 
 select {

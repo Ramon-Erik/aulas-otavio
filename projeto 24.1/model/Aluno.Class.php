@@ -33,6 +33,6 @@ class Aluno {
         // $consultar->bindValue(":id_usuario", $id_func['id']);
         // $consultar->execute();
 
-        header('location:../view/login.html');
+        // header('location:../view/login.html');
     }
 }

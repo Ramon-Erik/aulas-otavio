@@ -13,6 +13,14 @@
         <h1>Registrar usuario</h1>
         <form action="../control/controle-usuario.php" method="POST">
             <div class="linha">
+                <!-- <label for="emailId">Seu email</label> -->
+                <input type="email" name="email" id="emailId"  placeholder="Seu email" required>
+            </div>
+            <div class="linha">
+                <!-- <label for="senhaId">Seu senha</label> -->
+                <input type="password" name="senha" id="senhaId" placeholder="Seu senha" required>
+            </div>
+            <div class="linha">
                 <select name="tipo">
                     <option value="admin">Admin</option>
                     <option value="aluno">Aluno</option>
@@ -20,14 +28,8 @@
                 </select>
             </div>
             <div class="linha">
-                <label for="emailId">Seu email</label>
-                <input type="email" name="email" id="emailId" required>
+                <input type="submit" name="cadastro_usuario" value="Cadastrar">
             </div>
-            <div class="linha">
-                <label for="senhaId">Seu senha</label>
-                <input type="password" name="senha" id="senhaId" required>
-            </div>
-            <input type="submit" name="cadastro_usuario" value="Cadastrar">
         </form>
     </main>
 </body>
