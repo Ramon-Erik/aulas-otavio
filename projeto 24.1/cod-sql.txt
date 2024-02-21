@@ -1,11 +1,15 @@
 create table aluno (
 	id int PRIMARY key not null AUTO_INCREMENT,
-    motivo enum("lanche", "banheiro"),
-    data date,
-    id_aluno int,
-    id_usuario int,
-    FOREIGN key (id_aluno) references aluno(id),
-    FOREIGN key (id_usuario) references usuario(id)
+    ano enum("1", "2", "3"),
+    turma enum("A", "B", "C", "D"),
+    nome varchar(200)
+);
+
+create table usuario (
+	id int PRIMARY key not null AUTO_INCREMENT,
+    ano enum("1", "2", "3"),
+    turma enum("A", "B", "C", "D"),
+    nome varchar(200)
 );
 
 create table registro(
