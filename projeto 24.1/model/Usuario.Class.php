@@ -35,4 +35,29 @@ class Usuario {
 
         // header('location:../view/login.html');
     }
+
+    public function listar_usuarios() {
+
+        $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
+        $consulta = "select * from usuario order by tipo, email;";
+        $consulta_feita = $pdo->prepare($consulta);
+        $consulta_feita->execute();
+
+        echo '<table border=1>
+        <tr>
+            <th colspan=2>Relatório de Usuarios</th>
+            
+        </tr>
+        <tr>
+        <th>Email</th>
+        <th>Tipo</th>
+        </tr>';
+
+        foreach ($consulta_feita as $value) {
+            // var_dump($value);
+            echo'<tr><td>' .$value['email'] . '</td>';
+            echo '<td>'. $value['tipo'] . '</td></tr>';
+        }
+        echo '</table>';
+    }
 }

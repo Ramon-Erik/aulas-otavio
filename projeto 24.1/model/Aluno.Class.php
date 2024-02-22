@@ -43,11 +43,23 @@ class Aluno {
         $consulta_feita = $pdo->prepare($consulta);
         $consulta_feita->execute();
 
+        echo '<table border=1>
+        <tr>
+            <th colspan=3>Relatório de Alunos</th>
+            
+        </tr>
+        <tr>
+        <th>Nome</th>
+        <th>Ano</th>
+        <th>Turma</th>
+        </tr>';
+
         foreach ($consulta_feita as $value) {
             // var_dump($value);
-            echo $value['nome'] . '<br>';
-            echo $value['ano'] . '<br>';
-            echo $value['turma'] . '<br>';
+            echo'<tr><td>' .$value['nome'] . '</td>';
+            echo '<td>'.$value['ano'] . '</td>';
+            echo '<td>'. $value['turma'] . '</td></tr>';
         }
+        echo '</table>';
     }
 }
