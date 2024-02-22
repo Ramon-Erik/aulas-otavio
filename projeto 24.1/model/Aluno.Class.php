@@ -36,17 +36,18 @@ class Aluno {
         // header('location:../view/login.html');
     }
 
-    public function listar_alunos($turma, $nome, $ano) {
+    public function listar_alunos() {
 
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
         $consulta = "select * from aluno order by ano, turma;";
         $consulta_feita = $pdo->prepare($consulta);
-
         $consulta_feita->execute();
+
         foreach ($consulta_feita as $value) {
-            echo $value['nome'] . '<br';
-            echo $value['ano'] . '<br';
-            echo $value['turma'] . '<br';
+            // var_dump($value);
+            echo $value['nome'] . '<br>';
+            echo $value['ano'] . '<br>';
+            echo $value['turma'] . '<br>';
         }
     }
 }
