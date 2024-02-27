@@ -13,16 +13,14 @@ class Aluno {
         $consulta_feita->execute();
     }
 
-    public function listar_alunos() {
+    public function listar_alunos($ano, $turma) {
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
         $consulta = "select * from aluno order by ano, turma;";
         $consulta_feita = $pdo->prepare($consulta);
         $consulta_feita->execute();
 
         foreach ($consulta_feita as $value) {
-            // var_dump($value);
-            echo '<option>'. $value['nome'] . '</option>';
+            echo '<option value=' . $value['id'] . '>' . $value['nome'] . '</option>';
         }
     }
-    // public function 
 }
