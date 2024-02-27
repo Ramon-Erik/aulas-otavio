@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Façã um Regsitro</title>
+    <title>Faça um Regsitro</title>
     <link rel="stylesheet" href="css/registro.css">
 </head>
 
@@ -26,10 +26,11 @@
             </select>
             <br>
             <select name="aluno">
-                <option>Ramon</option>
-                <option>Rayssa</option>
-                <option>Gabriele</option>
-                <option>Beatriz</option>
+                <?php
+                    require('../model/Aluno.Class.php');
+                    $aluno = new Aluno();
+                    $aluno->listar_alunos();
+                ?>
             </select>
             <br>
             <select name="motivo">
