@@ -25,11 +25,11 @@
                 <option value="D">D</option>
             </select>
             <br>
-            <select name="aluno">
+            <select name="id_aluno">
                 <?php
                     require('../model/Aluno.Class.php');
                     $aluno = new Aluno();
-                    $aluno->listar_alunos();
+                    $aluno->listar_alunos("z","z");
                 ?>
             </select>
             <br>
@@ -38,6 +38,9 @@
                 <option>pessoal</option>
                 <option>consulta</option>
                 <option>lanche</option>
+                <option>transporte</option>
+                <option>projeto</option>
+                <option>alinhamento</option>
             </select>
             <br>
         

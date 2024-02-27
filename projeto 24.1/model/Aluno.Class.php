@@ -23,4 +23,5 @@ class Aluno {
             echo '<option value=' . $value['id'] . '>' . $value['nome'] . '</option>';
         }
     }
+    // public function 
 }

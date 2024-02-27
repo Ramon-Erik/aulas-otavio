@@ -1,14 +1,11 @@
 <?php
+require('../model/Registro.Class.php');
+
 if(isset($_POST['cadastro_atraso'])){
-    $ano = $_POST['ano'];
-    $turma = $_POST['turma'];
-    $aluno = $_POST['aluno'];
+    $aluno = $_POST['id_aluno'];
     $motivo = $_POST['motivo'];
 
-    // $x = new Registro();
-    echo $ano. '<br>';
-    echo $turma. '<br>';
-    echo $aluno. '<br>';
-    echo $motivo. '<br>';
+    $registro = new Registro();
+    $registro->cadastrar_registro($motivo, $aluno);
 }
 ?>
