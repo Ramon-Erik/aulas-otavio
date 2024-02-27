@@ -1,6 +1,6 @@
 <?php
 require("../model/Usuario.Class.php");
-if(isset($_POST['cadastro_usuario'])){
+if (isset($_POST['cadastro_usuario'])) {
     $tipo = $_POST['tipo'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
@@ -8,4 +8,3 @@ if(isset($_POST['cadastro_usuario'])){
     $usuario = new Usuario('', '');
     $usuario->cadastrar_usuario($tipo, $senha, $email);
 }
-?>
