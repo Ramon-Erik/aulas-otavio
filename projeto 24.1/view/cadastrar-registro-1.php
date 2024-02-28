@@ -28,7 +28,7 @@
                 </select>
             </div>
             <div class="linha">
-                <input type="submit" name="avanco" value="Avançar">
+                <input type="submit" name="prox" value="Avançar">
             </div>
         </form>
     </main>

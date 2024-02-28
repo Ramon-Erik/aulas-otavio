@@ -1,7 +1,7 @@
 <?php
 require('../model/Registro.Class.php');
 
-if (isset($_POST['avanco'])) {
+if (isset($_POST['prox'])) {
   $ano = $_POST['ano'];
   $turma = $_POST['turma'];
   echo $ano;
