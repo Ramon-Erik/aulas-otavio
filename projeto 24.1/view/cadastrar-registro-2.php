@@ -17,7 +17,7 @@
                     <?php
                         require('../model/Aluno.Class.php');
                         $aluno = new Aluno();
-                        $aluno->listar_alunos("z","z");
+                        $aluno->listar_alunos();
                     ?>
                 </select>
             </div>

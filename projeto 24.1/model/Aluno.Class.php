@@ -13,10 +13,18 @@ class Aluno {
         $consulta_feita->execute();
     }
 
-    public function listar_alunos($ano, $turma) {
+    public function listar_alunos() {
+        session_start();
+        $ano = $_SESSION['ano'];
+        $turma = $_SESSION['turma'];
+
+        echo 'a', $ano, $turma;
+
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
-        $consulta = "select * from aluno order by ano, turma;";
+        $consulta = "select * from aluno where ano=:ano and turma=:turma";
         $consulta_feita = $pdo->prepare($consulta);
+        $consulta_feita->bindValue(":ano", $ano);
+        $consulta_feita->bindValue(":turma", $turma);
         $consulta_feita->execute();
 
         foreach ($consulta_feita as $value) {
