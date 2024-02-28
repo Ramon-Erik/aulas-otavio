@@ -14,9 +14,9 @@
         <form action="../control/controle-registro.php" method="POST">
             <div class="linha">
                 <select name="ano">
-                    <option value="1"> 1° ANO </option>
-                    <option value="2"> 2° ANO </option>
-                    <option value="3"> 3° ANO </option>
+                    <option value="1">1° ANO </option>
+                    <option value="2">2° ANO </option>
+                    <option value="3">3° ANO </option>
                 </select>
             </div>
             <div class="linha">
