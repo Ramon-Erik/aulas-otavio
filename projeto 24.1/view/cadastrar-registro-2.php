@@ -12,29 +12,26 @@
     <main>
         <h1>Registrar atraso</h1>
         <form action="../control/controle-registro.php" method="POST">
-            
-               
-            </select>
-            <br>
-            <select name="id_aluno">
-                <?php
-                    require('../model/Aluno.Class.php');
-                    $aluno = new Aluno();
-                    $aluno->listar_alunos("z","z");
-                ?>
-            </select>
-            <br>
-            <select name="motivo">
-                <option>banheiro</option>
-                <option>pessoal</option>
-                <option>consulta</option>
-                <option>lanche</option>
-                <option>transporte</option>
-                <option>projeto</option>
-                <option>alinhamento</option>
-            </select>
-            <br>
-        
+            <div class="linha">
+                <select name="id_aluno">
+                    <?php
+                        require('../model/Aluno.Class.php');
+                        $aluno = new Aluno();
+                        $aluno->listar_alunos("z","z");
+                    ?>
+                </select>
+            </div>
+            <div class="linha">
+                <select name="motivo">
+                    <option>banheiro</option>
+                    <option>pessoal</option>
+                    <option>consulta</option>
+                    <option>lanche</option>
+                    <option>transporte</option>
+                    <option>projeto</option>
+                    <option>alinhamento</option>
+                </select>
+            </div>
             <input type="submit" name="cadastro_atraso" value="Cadastrar">
         </form>
     </main>
