@@ -9,6 +9,8 @@ if (isset($_POST['prox'])) {
   $_SESSION['ano'] = $ano;
   $_SESSION['turma'] = $turma;
 
+  header("location: ../view/cadastrar-registro-2.php");
+
   // $registro = new Registro();
   //  $registro->cadastrar_registro($motivo, $aluno);
 }
