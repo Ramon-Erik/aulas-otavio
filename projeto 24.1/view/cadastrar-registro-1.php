@@ -12,23 +12,24 @@
     <main>
         <h1>Registrar atraso</h1>
         <form action="../control/controle-registro.php" method="POST">
-            <select name="ano">
-                <option value="1°"> 1° ANO </option>
-                <option value="2°"> 2° ANO </option>
-                <option value="3°"> 3° ANO </option>
-            </select>
-            <br>
-            <select name="turma">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-            </select>
-            <br>
-            
-            <br>
-        
-            <input type="submit" name="avanco" value="Avançar">
+            <div class="linha">
+                <select name="ano">
+                    <option value="1°"> 1° ANO </option>
+                    <option value="2°"> 2° ANO </option>
+                    <option value="3°"> 3° ANO </option>
+                </select>
+            </div>
+            <div class="linha">
+                <select name="turma">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="linha">
+                <input type="submit" name="avanco" value="Avançar">
+            </div>
         </form>
     </main>
 </body>
