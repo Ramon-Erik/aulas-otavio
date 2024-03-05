@@ -21,3 +21,103 @@ create table registro(
     FOREIGN key (id_aluno) references aluno(id),
     FOREIGN key (id_usuario) references usuario(id)
 );
+
+Aqui estão os comandos SQL para inserir os nomes nas turmas A, B, C e D do ano 3:
+
+```sql
+-- Para o ano 3, turma A
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('3', 'A', 'Sophia Almeida Oliveira'),
+       ('3', 'A', 'Enzo Oliveira Costa'),
+       ('3', 'A', 'Laura Lima Pereira'),
+       ('3', 'A', 'David Almeida Lima'),
+       ('3', 'A', 'Manuela Almeida Alves'),
+       ('3', 'A', 'Felipe Lima Costa'),
+       ('3', 'A', 'Bianca Pereira Oliveira'),
+       ('3', 'A', 'Gustavo Almeida Lima'),
+       ('3', 'A', 'Mariana Lima Alves'),
+       ('3', 'A', 'João Costa Pereira'),
+       ('3', 'A', 'Beatriz Oliveira Almeida'),
+       ('3', 'A', 'Thiago Almeida Costa'),
+       ('3', 'A', 'Gabriela Lima Pereira'),
+       ('3', 'A', 'Lucas Pereira Costa'),
+       ('3', 'A', 'Letícia Almeida Lima'),
+       ('3', 'A', 'Rafaela Lima Alves'),
+       ('3', 'A', 'Eduardo Oliveira Lima'),
+       ('3', 'A', 'Isabella Almeida Costa'),
+       ('3', 'A', 'Diego Oliveira Pereira'),
+       ('3', 'A', 'Ana Carolina Costa Almeida');
+
+-- Para o ano 3, turma B
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('3', 'B', 'Bruno Oliveira Nunes'),
+       ('3', 'B', 'Mariana Costa Lima'),
+       ('3', 'B', 'Rafael Almeida Silva'),
+       ('3', 'B', 'Diego Lima Costa'),
+       ('3', 'B', 'Luana Almeida Pereira'),
+       ('3', 'B', 'Leonardo Oliveira Alves'),
+       ('3', 'B', 'Carolina Pereira Santos'),
+       ('3', 'B', 'Guilherme Almeida Lima'),
+       ('3', 'B', 'Fernanda Lima Pereira'),
+       ('3', 'B', 'Vinicius Oliveira Lima'),
+       ('3', 'B', 'Sophia Almeida Oliveira'),
+       ('3', 'B', 'Enzo Oliveira Costa'),
+       ('3', 'B', 'Laura Lima Pereira'),
+       ('3', 'B', 'David Almeida Lima'),
+       ('3', 'B', 'Manuela Almeida Alves'),
+       ('3', 'B', 'Felipe Lima Costa'),
+       ('3', 'B', 'Bianca Pereira Oliveira'),
+       ('3', 'B', 'Gustavo Almeida Lima'),
+       ('3', 'B', 'Mariana Lima Alves'),
+       ('3', 'B', 'João Costa Pereira');
+
+-- Para o ano 3, turma C
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('3', 'C', 'Bruno Pereira Nunes'),
+       ('3', 'C', 'Mariana Costa Lima'),
+       ('3', 'C', 'Rafael Almeida Silva'),
+       ('3', 'C', 'Diego Lima Costa'),
+       ('3', 'C', 'Luana Almeida Pereira'),
+       ('3', 'C', 'Leonardo Oliveira Alves'),
+       ('3', 'C', 'Carolina Pereira Santos'),
+       ('3', 'C', 'Guilherme Almeida Lima'),
+       ('3', 'C', 'Fernanda Lima Pereira'),
+       ('3', 'C', 'Vinicius Oliveira Lima'),
+       ('3', 'C', 'Sophia Almeida Oliveira'),
+       ('3', 'C', 'Enzo Oliveira Costa'),
+       ('3', 'C', 'Laura Lima Pereira'),
+       ('3', 'C', 'David Almeida Lima'),
+       ('3', 'C', 'Manuela Almeida Alves'),
+       ('3', 'C', 'Felipe Lima Costa'),
+       ('3', 'C', 'Bianca Pereira Oliveira'),
+       ('3', 'C', 'Gustavo Almeida Lima'),
+       ('3', 'C', 'Mariana Lima Alves'),
+       ('3', 'C', 'João Costa Pereira');
+
+-- Para o ano 3, turma D
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('3', 'D', 'Sophia Lima Oliveira'),
+       ('3', 'D', 'Enzo Almeida Costa'),
+       ('3', 'D', 'Laura Santos Pereira'),
+       ('3', 'D', 'David Oliveira Lima'),
+       ('3', 'D', 'Manuela Costa Alves'),
+       ('3', 'D', 'Felipe Lima Santos'),
+       ('3', 'D', 'Bianca Alme
+
+ida Oliveira'),
+       ('3', 'D', 'Gustavo Pereira Lima'),
+       ('3', 'D', 'Mariana Oliveira Alves'),
+       ('3', 'D', 'João Lima Pereira'),
+       ('3', 'D', 'Beatriz Almeida Costa'),
+       ('3', 'D', 'Thiago Santos Oliveira'),
+       ('3', 'D', 'Gabriela Costa Lima'),
+       ('3', 'D', 'Lucas Pereira Almeida'),
+       ('3', 'D', 'Letícia Alves Costa'),
+       ('3', 'D', 'Rafaela Lima Oliveira'),
+       ('3', 'D', 'Eduardo Costa Almeida'),
+       ('3', 'D', 'Isabella Almeida Santos'),
+       ('3', 'D', 'Diego Lima Costa'),
+       ('3', 'D', 'Ana Carolina Pereira Almeida');
+```
+
+Estes comandos inserem os nomes nas turmas A, B, C e D do ano 3.

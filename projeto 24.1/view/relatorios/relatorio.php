@@ -18,7 +18,7 @@ $pdf->Cell(170, 5, 'Nome', 1, 1, 'L');
 $pdf->SetFont('arial', '', 12);
 
 foreach ($consulta_feita as $value) {
-    $pdf->Cell(20, 5, $value['id'], 1, 0, 'L');
+    $pdf->Cell(20, 5, $value['id'], 1, 0, 'C');
     $pdf->Cell(170, 5, $value['nome'], 1, 1, 'L');
 }
 
