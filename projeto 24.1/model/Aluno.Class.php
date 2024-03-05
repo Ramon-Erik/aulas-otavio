@@ -31,5 +31,11 @@ class Aluno {
             echo '<option value=' . $value['id'] . '>' . $value['nome'] . '</option>';
         }
     }
+    public function listar_usuarios_pdf() {
+        $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
+        $consulta = "select * from aluno";
+        $consulta_feita = $pdo->prepare($consulta);
+        $consulta_feita->execute();
+    }
     // public function 
 }
