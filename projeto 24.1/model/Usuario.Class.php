@@ -60,4 +60,12 @@ class Usuario {
         }
         echo '</table>';
     }
+
+    public function listar_usuarios_pdf() {
+        $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
+        $consulta = "select * from usuario order by tipo, email;";
+        $consulta_feita = $pdo->prepare($consulta);
+        $consulta_feita->execute();
+        echo '<?php $pdf->Cell(0, 15,utf8_decode ("Você é linda"), 1, 1)?>';
+    }
 }
