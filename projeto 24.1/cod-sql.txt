@@ -22,7 +22,190 @@ create table registro(
     FOREIGN key (id_usuario) references usuario(id)
 );
 
-Aqui estão os comandos SQL para inserir os nomes nas turmas A, B, C e D do ano 3:
+-- Para o ano 1, turma A
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('1', 'A', 'Lucas Oliveira Santos'),
+       ('1', 'A', 'Isabela Costa Lima'),
+       ('1', 'A', 'Mateus Almeida Pereira'),
+       ('1', 'A', 'Larissa Rodrigues Silva'),
+       ('1', 'A', 'Gabriel Nunes Castro'),
+       ('1', 'A', 'Amanda Oliveira Lima'),
+       ('1', 'A', 'Pedro Santos Souza'),
+       ('1', 'A', 'Juliana Costa Pereira'),
+       ('1', 'A', 'Matheus Lima Oliveira'),
+       ('1', 'A', 'Ana Carolina Almeida'),
+       ('1', 'A', 'Bruno Pereira Nunes'),
+       ('1', 'A', 'Mariana Castro Lima'),
+       ('1', 'A', 'Rafaela Silva Almeida'),
+       ('1', 'A', 'Diego Oliveira Costa'),
+       ('1', 'A', 'Luana Pereira Santos'),
+       ('1', 'A', 'Leonardo Almeida Costa'),
+       ('1', 'A', 'Carolina Santos Oliveira'),
+       ('1', 'A', 'Guilherme Lima Costa'),
+       ('1', 'A', 'Fernanda Pereira Almeida'),
+       ('1', 'A', 'Vinicius Costa Lima');
+
+-- Para o ano 1, turma B
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('1', 'B', 'Gustavo Almeida Costa'),
+       ('1', 'B', 'Bianca Lima Oliveira'),
+       ('1', 'B', 'Thiago Santos Pereira'),
+       ('1', 'B', 'Camila Oliveira Pereira'),
+       ('1', 'B', 'Ricardo Pereira Almeida'),
+       ('1', 'B', 'Fernanda Costa Lima'),
+       ('1', 'B', 'Daniel Lima Almeida'),
+       ('1', 'B', 'Natália Pereira Costa'),
+       ('1', 'B', 'Marcos Almeida Santos'),
+       ('1', 'B', 'Aline Costa Oliveira'),
+       ('1', 'B', 'Eduardo Santos Lima'),
+       ('1', 'B', 'Julia Oliveira Pereira'),
+       ('1', 'B', 'Felipe Lima Almeida'),
+       ('1', 'B', 'Viviane Costa Oliveira'),
+       ('1', 'B', 'Renato Almeida Lima'),
+       ('1', 'B', 'Leticia Santos Costa'),
+       ('1', 'B', 'Caio Lima Pereira'),
+       ('1', 'B', 'Mariana Oliveira Almeida'),
+       ('1', 'B', 'Rafael Costa Lima'),
+       ('1', 'B', 'Patricia Almeida Santos');
+       
+-- Para o ano 1, turma C
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('1', 'C', 'Sofia Lima Oliveira'),
+       ('1', 'C', 'Enzo Almeida Costa'),
+       ('1', 'C', 'Laura Santos Pereira'),
+       ('1', 'C', 'Davi Oliveira Lima'),
+       ('1', 'C', 'Manuela Costa Alves'),
+       ('1', 'C', 'Felipe Lima Santos'),
+       ('1', 'C', 'Bianca Almeida Oliveira'),
+       ('1', 'C', 'Gustavo Pereira Lima'),
+       ('1', 'C', 'Mariana Oliveira Alves'),
+       ('1', 'C', 'João Lima Pereira'),
+       ('1', 'C', 'Beatriz Almeida Costa'),
+       ('1', 'C', 'Thiago Santos Oliveira'),
+       ('1', 'C', 'Gabriela Costa Lima'),
+       ('1', 'C', 'Lucas Pereira Almeida'),
+       ('1', 'C', 'Letícia Alves Costa'),
+       ('1', 'C', 'Rafaela Lima Oliveira'),
+       ('1', 'C', 'Eduardo Costa Almeida'),
+       ('1', 'C', 'Isabella Almeida Santos'),
+       ('1', 'C', 'Diego Lima Costa'),
+       ('1', 'C', 'Ana Carolina Pereira Almeida');
+
+-- Para o ano 1, turma D
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('1', 'D', 'Bruno Pereira Nunes'),
+       ('1', 'D', 'Mariana Castro Lima'),
+       ('1', 'D', 'Rafaela Silva Almeida'),
+       ('1', 'D', 'Diego Oliveira Costa'),
+       ('1', 'D', 'Luana Pereira Santos'),
+       ('1', 'D', 'Leonardo Almeida Costa'),
+       ('1', 'D', 'Carolina Santos Oliveira'),
+       ('1', 'D', 'Guilherme Lima Costa'),
+       ('1', 'D', 'Fernanda Pereira Almeida'),
+       ('1', 'D', 'Vinicius Costa Lima'),
+       ('1', 'D', 'Sofia Lima Oliveira'),
+       ('1', 'D', 'Enzo Almeida Costa'),
+       ('1', 'D', 'Laura Santos Pereira'),
+       ('1', 'D', 'Davi Oliveira Lima'),
+       ('1', 'D', 'Manuela Costa Alves'),
+       ('1', 'D', 'Felipe Lima Santos'),
+       ('1', 'D', 'Bianca Almeida Oliveira'),
+       ('1', 'D', 'Gustavo Pereira Lima'),
+       ('1', 'D', 'Mariana Oliveira Alves'),
+       ('1', 'D', 'João Lima Pereira');
+
+-- Para o ano 2, turma A
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('2', 'A', 'Sophia Almeida Oliveira'),
+       ('2', 'A', 'Enzo Oliveira Costa'),
+       ('2', 'A', 'Laura Lima Pereira'),
+       ('2', 'A', 'David Almeida Lima'),
+       ('2', 'A', 'Manuela Almeida Alves'),
+       ('2', 'A', 'Felipe Lima Costa'),
+       ('2', 'A', 'Bianca Pereira Oliveira'),
+       ('2', 'A', 'Gustavo Almeida Lima'),
+       ('2', 'A', 'Mariana Lima Alves'),
+       ('2', 'A', 'João Costa Pereira'),
+       ('2', 'A', 'Beatriz Oliveira Almeida'),
+       ('2', 'A', 'Thiago Almeida Costa'),
+       ('2', 'A', 'Gabriela Lima Pereira'),
+       ('2', 'A', 'Lucas Pereira Costa'),
+       ('2', 'A', 'Letícia Almeida Lima'),
+       ('2', 'A', 'Rafaela Lima Alves'),
+       ('2', 'A', 'Eduardo Oliveira Lima'),
+       ('2', 'A', 'Isabella Almeida Costa'),
+       ('2', 'A', 'Diego Oliveira Pereira'),
+       ('2', 'A', 'Ana Carolina Costa Almeida');
+
+-- Para o ano 2, turma B
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('2', 'B', 'Bruno Oliveira Nunes'),
+       ('2', 'B', 'Mariana Costa Lima'),
+       ('2', 'B', 'Rafael Almeida Silva'),
+       ('2', 'B', 'Diego Lima Costa'),
+       ('2', 'B', 'Luana Almeida Pereira'),
+       ('2', 'B', 'Leonardo Oliveira Alves'),
+       ('2', 'B', 'Carolina Pereira Santos'),
+       ('2', 'B', 'Guilherme Almeida Lima'),
+       ('2', 'B', 'Fernanda Lima Pereira'),
+       ('2', 'B', 'Vinicius Oliveira Lima'),
+       ('2', 'B', 'Sophia Almeida Oliveira'),
+       ('2', 'B', 'Enzo Oliveira Costa'),
+       ('2', 'B', 'Laura Lima Pereira'),
+       ('2', 'B', 'David Almeida Lima'),
+       ('2', 'B', 'Manuela Almeida Alves'),
+       ('2', 'B', 'Felipe Lima Costa'),
+       ('2', 'B', 'Bianca Pereira Oliveira'),
+       ('2', 'B', 'Gustavo Almeida Lima'),
+       ('2', 'B', 'Mariana Lima Alves'),
+       ('2', 'B', 'João Costa Pereira');
+
+-- Para o ano 2, turma C
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('2', 'C', 'Sophia Lima Oliveira'),
+       ('2', 'C', 'Enzo Almeida Costa'),
+       ('2', 'C', 'Laura Santos Pereira'),
+       ('2', 'C', 'David Oliveira Lima'),
+       ('2', 'C', 'Manuela Costa Alves'),
+       ('2', 'C', 'Felipe Lima Santos'),
+       ('2', 'C', 'Bianca Almeida Oliveira'),
+       ('2', 'C', 'Gustavo Pereira Lima'),
+       ('2', 'C', 'Mariana Oliveira Alves'),
+       ('2', 'C', 'João Lima Pereira'),
+       ('2', 'C', 'Beatriz Almeida Costa'),
+       ('2', 'C', 'Thiago Santos Oliveira'),
+       ('2', 'C', 'Gabriela Costa Lima'),
+       ('2', 'C', 'Lucas Pereira Almeida'),
+       ('2', 'C', 'Letícia Alves Costa'),
+       ('2', 'C', 'Rafaela Lima Oliveira'),
+       ('2', 'C', 'Eduardo Costa Almeida'),
+       ('2', 'C', 'Isabella Almeida Santos'),
+       ('2', 'C', 'Diego Lima Costa'),
+       ('2', 'C', 'Ana Carolina Pereira Almeida');
+
+-- Para o ano 2, turma D
+INSERT INTO aluno (ano, turma, nome) 
+VALUES ('2', 'D', 'Bruno Pereira Nunes'),
+       ('2', 'D', 'Mariana Castro Lima'),
+       ('2', 'D', 'Rafaela Silva Almeida'),
+       ('2', 'D', 'Diego Oliveira Costa'),
+       ('2', 'D', 'Luana Pereira Santos'),
+       ('2', 'D', 'Leonardo Almeida Costa'),
+       ('2', 'D', 'Carolina Santos Oliveira'),
+       ('2', 'D', 'Guilherme Lima Costa'),
+       ('2', 'D', 'Fernanda Pereira Almeida'),
+       ('2', 'D', 'Vinicius Costa Lima'),
+       ('2', 'D', 'Sophia Lima Oliveira'),
+       ('2', 'D', 'Enzo Almeida Costa'),
+       ('2', 'D', 'Laura Santos Pereira'),
+       ('2', 'D', 'David Oliveira Lima'),
+       ('2', 'D', 'Manuela Costa Alves'),
+       ('2', 'D', 'Felipe Lima Santos'),
+       ('2', 'D', 'Bianca Almeida Oliveira'),
+       ('2', 'D', 'Gustavo Pereira Lima'),
+       ('2', 'D', 'Mariana Oliveira Alves'),
+       ('2', 'D', 'João Lima Pereira');
+
 
 ```sql
 -- Para o ano 3, turma A
@@ -102,9 +285,7 @@ VALUES ('3', 'D', 'Sophia Lima Oliveira'),
        ('3', 'D', 'David Oliveira Lima'),
        ('3', 'D', 'Manuela Costa Alves'),
        ('3', 'D', 'Felipe Lima Santos'),
-       ('3', 'D', 'Bianca Alme
-
-ida Oliveira'),
+       ('3', 'D', 'Bianca Almeida Oliveira'),
        ('3', 'D', 'Gustavo Pereira Lima'),
        ('3', 'D', 'Mariana Oliveira Alves'),
        ('3', 'D', 'João Lima Pereira'),
