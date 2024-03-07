@@ -30,6 +30,9 @@
             <div class="linha">
                 <input type="submit" name="prox" value="Avançar">
             </div>
+            <div class="linha">
+                <input type="submit" name="registro_turma" value="Relatório por turma">
+            </div>
         </form>
     </main>
 </body>

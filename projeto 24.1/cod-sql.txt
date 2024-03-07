@@ -10,7 +10,7 @@ create table aluno (
 create table usuario (
 	id int PRIMARY key not null AUTO_INCREMENT,
     tipo enum("admin", "aluno", "professor"),
-    senha: varchar(20),
+    senha varchar(20),
     email varchar(200)
 );
 
@@ -23,6 +23,11 @@ create table registro(
     FOREIGN key (id_aluno) references aluno(id),
     FOREIGN key (id_usuario) references usuario(id)
 );
+
+ALTER TABLE `registro` CHANGE `motivo` `motivo` ENUM('banheiro','pessoal', 'consulta','lanche','transporte','projeto','alinhamento') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL;
+
+INSERT INTO `usuario`(`id`, `tipo`, `senha`, `email`) VALUES (null, 'admin', 'qwert', 'ro@gmail.com');
+INSERT INTO `usuario`(`id`, `tipo`, `senha`, `email`) VALUES (null, 'admin', 'qwert', 'dri@gmail.com');
 
 -- Para o ano 1, turma A
 INSERT INTO aluno (ano, turma, nome) 

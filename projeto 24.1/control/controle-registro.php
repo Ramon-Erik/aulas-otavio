@@ -1,6 +1,16 @@
 <?php
 require('../model/Registro.Class.php');
 
+if (isset($_POST['registro_turma'])) {
+  $ano = $_POST['ano'];
+  $turma = $_POST['turma'];
+
+  session_start();
+  $_SESSION['ano'] = $ano;
+  $_SESSION['turma'] = $turma;
+
+  header("location:../view/relatorios/relatorio-registro.php");
+}
 
 if (isset($_POST['prox'])) {
   $ano = $_POST['ano'];
