@@ -49,7 +49,7 @@ class Registro
         foreach ($consulta_feita as $reg) {
             $pdf->Cell(25, 5, $reg['motivo'], 1, 0, 'C');
             $pdf->Cell(120, 5, $reg['nome'], 1, 0, 'L');
-            $pdf->Cell(40, 5, $reg['data'], 1, 1, 'C');
+            $pdf->Cell(40, 5, date('d/m/Y', strtotime($reg['data'])), 1, 1, 'C');
         }
 
         $pdf->Output();
