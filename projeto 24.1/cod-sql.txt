@@ -1,3 +1,5 @@
+create database nome_database;
+
 create table aluno (
 	id int PRIMARY key not null AUTO_INCREMENT,
     ano enum("1", "2", "3"),
@@ -206,8 +208,6 @@ VALUES ('2', 'D', 'Bruno Pereira Nunes'),
        ('2', 'D', 'Mariana Oliveira Alves'),
        ('2', 'D', 'João Lima Pereira');
 
-
-```sql
 -- Para o ano 3, turma A
 INSERT INTO aluno (ano, turma, nome) 
 VALUES ('3', 'A', 'Sophia Almeida Oliveira'),
@@ -299,6 +299,3 @@ VALUES ('3', 'D', 'Sophia Lima Oliveira'),
        ('3', 'D', 'Isabella Almeida Santos'),
        ('3', 'D', 'Diego Lima Costa'),
        ('3', 'D', 'Ana Carolina Pereira Almeida');
-```
-
-Estes comandos inserem os nomes nas turmas A, B, C e D do ano 3.
