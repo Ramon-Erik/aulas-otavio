@@ -92,13 +92,7 @@
                     <div class="form-container">
                         <div class="media-container-column">
                             <!---Formbuilder Form--->
-                            <form action="https://mobirise.com/" method="POST" data-form-title="Mobirise Form">
-                                <input type="hidden" name="email" data-form-email="true">
-                                <div class="row">
-                                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-                                    <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                                    </div>
-                                </div>
+                            <form action="../control/controle-aluno.php" method="POST">
                                 <div class="dragArea row">
                                     <div class="col-md-12 form-group " data-for="email">
                                         <input type="text" name="nome" placeholder="Nome" required="required" class="form-control px-3 display-7" id="name-header15-1f">
@@ -111,24 +105,15 @@
                                         </select>
                                     </div>
                                     <div class="col-md-12 form-group" data-for="name">
-                                        <select name="ano" class="form-control">
+                                        <select name="turma" class="form-control">
                                             <option value="A">A</option>
                                             <option value="B">B</option>
                                             <option value="C">C</option>
                                             <option value="D">D</option>
                                         </select>
                                     </div>
-                                    <!-- <div class="col-md-12 form-group " data-for="email">
-                                    <input type="email" name="email" placeholder="Email" data-form-field="Email" required="required" class="form-control px-3 display-7" id="email-header15-1f">
-                                </div>
-                                <div data-for="phone" class="col-md-12 form-group ">
-                                    <input type="tel" name="phone" placeholder="Phone" data-form-field="Phone" class="form-control px-3 display-7" id="phone-header15-1f">
-                                </div>
-                                <div data-for="message" class="col-md-12 form-group ">
-                                    <textarea name="message" placeholder="Message" data-form-field="Message" class="form-control px-3 display-7" id="message-header15-1f"></textarea>
-                                </div> -->
                                     <div class="col-md-12 input-group-btn">
-                                        <input type="submit" value="Cadastrar" class="btn btn-form btn-primary display-200" id="btn" name="">
+                                        <input type="submit" value="Cadastrar" class="btn btn-form btn-primary display-200" id="btn" name="cadastro_aluno">
                                     </div>
                                 </div>
                             </form><!---Formbuilder Form--->

@@ -19,6 +19,8 @@ if (isset($_POST['prox'])) {
   session_start();
   $_SESSION['ano'] = $ano;
   $_SESSION['turma'] = $turma;
+  // echo  'ano', $ano, 'turma', $turma;
+  // echo  'ano', $_SESSION['ano'], 'turma', $_SESSION['turma'];
 
   header("location: ../view/cadastrar-registro-2.php");
 }

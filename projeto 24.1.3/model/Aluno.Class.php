@@ -18,7 +18,8 @@ class Aluno {
         $ano = $_SESSION['ano'];
         $turma = $_SESSION['turma'];
 
-        echo 'a', $ano, $turma;
+        echo  'ano', $_SESSION['ano'], 'turma', $_SESSION['turma'];
+        echo  'ano', $ano, 'turma', $turma;
 
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
         $consulta = "select * from aluno where ano=:ano and turma=:turma";

@@ -30,9 +30,6 @@
 
 <body>
     <section class="menu cid-u6mG0V4yGt" once="menu" id="menu1-19">
-
-
-
         <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -63,10 +60,13 @@
                             <a class="text-white dropdown-item display-4" href="cadastrar-usuario.php">Usuarios</a>
                             <a class="text-white dropdown-item display-4" href="cadastrar-aluno.php">Alunos</a>
                             <a class="text-white dropdown-item display-4" href="cadastrar-registro.php">Registros</a>
-                    </div>
+                        </div>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="relatório-usuario.php" data-toggle="dropdown-submenu">
-                        <span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Relatorio</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-white dropdown-toggle display-4" href="relatorio-usuario.php" data-toggle="dropdown-submenu">
+                            <span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
+                            Relatorio
+                        </a>
                         <div class="dropdown-menu">
                             <a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registro</a></div>
                             <a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registro</a></div>

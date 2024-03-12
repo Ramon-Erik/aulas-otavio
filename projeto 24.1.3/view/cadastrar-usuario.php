@@ -79,28 +79,27 @@
             </div>
             <div class="col-lg-4 col-md-5">
                 <div class="form-container">
-                    <div class="media-container-column" data-form-type="formoid">
+                    <!-- <div class="media-container-column" atad-form-type="formoid"> -->
                         <!---Formbuilder Form--->
-                        <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="atNTGXM6Z+iKyuwHXc1cX3lEY+ozYSCHxq+fJisKqKbMRy1X1S8kjOo67PJxWs+lqzH5Rc9Lk2zMWdAXZZlLm8vIv0Feu4otwT+U5TJ7qtt+GJu1Zr7467Pq0ywOc7Ta">
-                            <div class="row">
-                                <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-                                <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                                </div>
-                            </div>
+                        <form action="../control/controle-usuario.php" method="POST">
+                            
+                            
                             <div class="dragArea row">
-                                <div class="col-md-12 form-group " data-for="name">
-                                    <input type="text" name="name" placeholder="Name" data-form-field="Name" required="required" class="form-control px-3 display-7" id="name-header15-1j">
-                                </div>
+                               
                                 <div class="col-md-12 form-group " data-for="email">
                                     <input type="email" name="email" placeholder="Email" data-form-field="Email" required="required" class="form-control px-3 display-7" id="email-header15-1j">
                                 </div>
-                                <div data-for="phone" class="col-md-12 form-group ">
-                                    <input type="tel" name="phone" placeholder="Phone" data-form-field="Phone" class="form-control px-3 display-7" id="phone-header15-1j">
+                                <div class="col-md-12 form-group " data-for="senha">
+                                    <input type="password" name="senha" placeholder="senha" data-form-field="senha" required="required" class="form-control px-3 display-7" id="password-header15-1j">
                                 </div>
-                                <div data-for="message" class="col-md-12 form-group ">
-                                    <textarea name="message" placeholder="Message" data-form-field="Message" class="form-control px-3 display-7" id="message-header15-1j"></textarea>
+                                <select name="tipo" class="form-control">
+                                            <option value="admin">admin</option>
+                                            <option value="aluno">aluno</option>
+                                            <option value="professor">professor</option>
+                                        </select>
+                                <div class="col-md-12 input-group-btn">
+                                    <input type="submit" class="btn btn-form btn-primary display-4" name="cadastro_usuario" value="Cadastrar" >
                                 </div>
-                                <div class="col-md-12 input-group-btn"><button type="submit" class="btn btn-form btn-primary display-4">Cadastrar</button></div>
                             </div>
                         </form><!---Formbuilder Form--->
                     </div>
