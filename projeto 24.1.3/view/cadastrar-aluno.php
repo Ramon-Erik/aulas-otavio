@@ -8,18 +8,17 @@
     <meta name="generator" content="Mobirise v4.12.4, mobirise.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
-    <meta name="description" content="Web Builder Description">
+    <meta name="description" content="Website Builder Description">
 
 
-    <title>Page 5</title>
+    <title>cadastrar-aluno</title>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="assets/socicon/css/styles.css">
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
-    <link rel="stylesheet" href="assets/as-pie-progress/css/progress.min.css">
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
@@ -29,7 +28,7 @@
 </head>
 
 <body>
-    <section class="menu cid-u6mG0V4yGt" once="menu" id="menu1-19">
+    <section class="menu cid-u6mKbH6svl" once="menu" id="menu1-1e">
 
 
 
@@ -55,18 +54,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                     <li class="nav-item dropdown">
-                        <a class="nav-link link text-white dropdown-toggle display-4" href="cadastrar-usuario.php" data-toggle="dropdown-submenu">
-                            <span class="mbri-upload mbr-iconfont mbr-iconfont-btn"></span>
-                            Cadastrar-aquii
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="text-white dropdown-item display-4" href="cadastrar-usuario.php">Usuarios</a>
-                            <a class="text-white dropdown-item display-4" href="cadastrar-aluno.php">Alunos</a>
-                            <a class="text-white dropdown-item display-4" href="cadastrar-registro.php">Registros</a>
-                    </div>
+                        <a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu"><span class="mbri-upload mbr-iconfont mbr-iconfont-btn"></span>
+
+                            Cadastrar</a>
+                        <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registros</a></div>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="relatório-usuario.php" data-toggle="dropdown-submenu">
-                        <span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Relatorio</a>
+                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Relatorio</a>
                         <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registro</a></div>
                     </li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobirise.co">
@@ -82,63 +75,68 @@
         </nav>
     </section>
 
-    <section class="engine"><a href="https://mobirise.info/s">bootstrap theme</a></section>
-    <section class="header12 cid-u6mC0kz5qd mbr-fullscreen mbr-parallax-background" id="header12-13">
+    <section class="engine"><a href="https://mobirise.info/q">free responsive site templates</a></section>
+    <section class="header15 cid-u6mKbHO42B mbr-fullscreen mbr-parallax-background" id="header15-1f">
 
 
 
-        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
-        </div>
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(7, 59, 76);"></div>
 
-        <div class="container  ">
-            <div class="media-container">
-                <div class="col-md-12 align-center">
-                    <h1 class="mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style display-1">Registro de atrasos</h1>
-                    <p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5">sistema para registro de atrasos para compromissos &nbsp;dentro do ambiente escolar.</p>
-
-
-                    <div class="icons-media-container mbr-white">
-                        <div class="card col-12 col-md-6 col-lg-3">
-                            <div class="icon-block">
-                                <a href="https://mobirise.co/">
-                                    <span class="mbr-iconfont mbri-users"></span>
-                                </a>
-                            </div>
-                            <h5 class="mbr-fonts-style display-5">Cadastro alunos</h5>
-                        </div>
-
-                        <div class="card col-12 col-md-6 col-lg-3">
-                            <div class="icon-block">
-                                <a href="https://mobirise.co/">
-                                    <span class="mbr-iconfont mbri-clock"></span>
-                                </a>
-                            </div>
-                            <h5 class="mbr-fonts-style display-5">Registrar atraso</h5>
-                        </div>
-
-                        <div class="card col-12 col-md-6 col-lg-3">
-                            <div class="icon-block">
-                                <a href="https://mobirise.co/">
-                                    <span class="mbr-iconfont mbri-edit"></span>
-                                </a>
-                            </div>
-                            <h5 class="mbr-fonts-style display-5">Relatorio de alunos</h5>
-                        </div>
-
-                        <div class="card col-12 col-md-6 col-lg-3">
-                            <div class="icon-block">
-                                <a href="https://mobirise.co/">
-                                    <span class="mbr-iconfont mbri-numbered-list"></span>
-                                </a>
-                            </div>
-                            <h5 class="mbr-fonts-style display-5">
-                                Relatorio de atrasos</h5>
+        <div class="container align-right">
+            <div class="row">
+                <div class="mbr-white col-lg-8 col-md-7 content-container">
+                    <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Cadastro de aluno(a)</h1>
+                    <p class="mbr-text pb-3 mbr-fonts-style display-5">Casdatrar estudantes de acordo com os dados da secretaria da escola.</p>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="form-container">
+                        <div class="media-container-column">
+                            <!---Formbuilder Form--->
+                            <form action="https://mobirise.com/" method="POST" data-form-title="Mobirise Form">
+                                <input type="hidden" name="email" data-form-email="true">
+                                <div class="row">
+                                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                                    <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                                    </div>
+                                </div>
+                                <div class="dragArea row">
+                                    <div class="col-md-12 form-group " data-for="email">
+                                        <input type="text" name="nome" placeholder="Nome" required="required" class="form-control px-3 display-7" id="name-header15-1f">
+                                    </div>
+                                    <div class="col-md-12 form-group" data-for="name">
+                                        <select name="ano" class="form-control">
+                                            <option value="1">1° ANO</option>
+                                            <option value="2">2° ANO</option>
+                                            <option value="3">3° ANO</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 form-group" data-for="name">
+                                        <select name="ano" class="form-control">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="col-md-12 form-group " data-for="email">
+                                    <input type="email" name="email" placeholder="Email" data-form-field="Email" required="required" class="form-control px-3 display-7" id="email-header15-1f">
+                                </div>
+                                <div data-for="phone" class="col-md-12 form-group ">
+                                    <input type="tel" name="phone" placeholder="Phone" data-form-field="Phone" class="form-control px-3 display-7" id="phone-header15-1f">
+                                </div>
+                                <div data-for="message" class="col-md-12 form-group ">
+                                    <textarea name="message" placeholder="Message" data-form-field="Message" class="form-control px-3 display-7" id="message-header15-1f"></textarea>
+                                </div> -->
+                                    <div class="col-md-12 input-group-btn">
+                                        <input type="submit" value="Cadastrar" class="btn btn-form btn-primary display-200" id="btn" name="">
+                                    </div>
+                                </div>
+                            </form><!---Formbuilder Form--->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
             <a href="#next">
                 <i class="mbri-down mbr-iconfont"></i>
@@ -146,61 +144,7 @@
         </div>
     </section>
 
-    <section class="progress-bars3 cid-u6mDrDhegx" id="progress-bars3-16">
-
-
-
-
-
-        <div class="container">
-            <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Percentual de atrasos de cada turma</h2>
-
-            <h3 class="mbr-section-subtitle mbr-fonts-style display-5">O calculo é feito com base no total de alunos, considerando todos da turma e o decorrer de todo dia.</h3>
-
-            <div class="media-container-row pt-5 mt-2">
-                <div class="card p-3 align-center">
-                    <div class="wrap">
-                        <div class="pie_progress progress1" role="progressbar" data-goal="50">
-                            <p class="pie_progress__number mbr-fonts-style display-5"></p>
-                        </div>
-                    </div>
-                    <div class="mbr-crt-title pt-3">
-                        <h4 class="card-title py-2 mbr-fonts-style display-5">1°B</h4>
-                    </div>
-                </div>
-
-                <div class="card p-3 align-center">
-                    <div class="wrap">
-                        <div class="pie_progress progress2" role="progressbar" data-goal="60">
-                            <p class="pie_progress__number mbr-fonts-style display-5"></p>
-                        </div>
-                    </div>
-                    <div class="mbr-crt-title pt-3">
-                        <h4 class="card-title py-2 mbr-fonts-style display-5">2°B</h4>
-                    </div>
-                </div>
-
-                <div class="card p-3 align-center">
-                    <div class="wrap">
-                        <div class="pie_progress progress3" role="progressbar" data-goal="70">
-                            <p class="pie_progress__number mbr-fonts-style display-5"></p>
-                        </div>
-                    </div>
-                    <div class="mbr-crt-title pt-3">
-                        <h4 class="card-title py-2 mbr-fonts-style display-5">3°B</h4>
-                    </div>
-                </div>
-
-
-
-
-
-
-            </div>
-        </div>
-    </section>
-
-    <section class="cid-u6mDn6ny3t" id="footer2-15">
+    <section class="cid-u6mKbK7rJY" id="footer2-1h">
 
 
 
@@ -296,14 +240,13 @@
     <script src="assets/popper/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="assets/tether/tether.min.js"></script>
-    <script src="assets/parallax/jarallax.min.js"></script>
-    <script src="assets/as-pie-progress/jquery-as-pie-progress.min.js"></script>
     <script src="assets/dropdown/js/nav-dropdown.js"></script>
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>
     <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-    <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+    <script src="assets/parallax/jarallax.min.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
     <script src="assets/theme/js/script.js"></script>
+    <script src="assets/formoid/formoid.min.js"></script>
 
 
 </body>
