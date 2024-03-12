@@ -1,6 +1,7 @@
-<?php 
-    session_start();
+<?php
+session_start();
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -12,8 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
     <meta name="description" content="Website Builder Description">
-
-
     <title>Cadastrar-Registro</title>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -26,21 +25,10 @@
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-
-
 </head>
 
 <body>
-<?php
-// require('../model/Aluno.Class.php');
-// $aluno = new Aluno();
-// $aluno->listar_alunos();
-// ?>
     <section class="menu cid-u6mG0V4yGt" once="menu" id="menu1-1a">
-
-
-
         <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -102,13 +90,13 @@
                         <!---Formbuilder Form--->
                         <form action="../control/controle-registro.php" method="POST">
                             <div class="dragArea row">
-                                <div class="col-md-12 form-group"> 
+                                <div class="col-md-12 form-group">
                                     <select name="id_aluno" class="form-control">
-                                    <?php
+                                        <?php
                                         require('../model/Aluno.Class.php');
                                         $aluno = new Aluno();
                                         $aluno->listar_alunos();
-                                    ?>
+                                        ?>
                                     </select>
                                 </div>
                                 <div class="col-md-12 form-group">
@@ -158,15 +146,10 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="container scroll">
                     <table class="table isSearch" cellspacing="0" data-empty="No matching records found">
                         <thead>
                             <tr class="table-heads ">
-
-
-
-
                                 <th class="head-item mbr-fonts-style display-7">
                                     Nome</th>
                                 <th class="head-item mbr-fonts-style display-7">Ano</th>
@@ -175,121 +158,13 @@
                                 <th class="head-item mbr-fonts-style display-7">Motivo</th>
                             </tr>
                         </thead>
-
                         <tbody>
-
-
-
-
                             <tr>
-
-
-
-
                                 <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
                                 <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
                                 <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
                                 <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
                                 <td class="body-item mbr-fonts-style display-7">Jeanna Schmal</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Caren Rials</td>
-                                <td class="body-item mbr-fonts-style display-7">Caren Rials</td>
-                                <td class="body-item mbr-fonts-style display-7">Caren Rials</td>
-                                <td class="body-item mbr-fonts-style display-7">Caren Rials</td>
-                                <td class="body-item mbr-fonts-style display-7">Caren Rials</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Leon Rogol</td>
-                                <td class="body-item mbr-fonts-style display-7">Leon Rogol</td>
-                                <td class="body-item mbr-fonts-style display-7">Leon Rogol</td>
-                                <td class="body-item mbr-fonts-style display-7">Leon Rogol</td>
-                                <td class="body-item mbr-fonts-style display-7">Leon Rogol</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                            </tr>
-                            <tr>
-
-
-
-
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
-                                <td class="body-item mbr-fonts-style display-7">Shala Barrera</td>
                             </tr>
                         </tbody>
                     </table>
@@ -312,13 +187,7 @@
             </div>
         </div>
     </section>
-
     <section class="cid-u6mHoWGbGr" id="footer2-1c">
-
-
-
-
-
         <div class="container">
             <div class="media-container-row content mbr-white">
                 <div class="col-12 col-md-3 mbr-fonts-style display-7">
