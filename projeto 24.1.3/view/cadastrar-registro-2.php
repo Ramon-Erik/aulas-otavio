@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -29,6 +32,11 @@
 </head>
 
 <body>
+<?php
+// require('../model/Aluno.Class.php');
+// $aluno = new Aluno();
+// $aluno->listar_alunos();
+// ?>
     <section class="menu cid-u6mG0V4yGt" once="menu" id="menu1-1a">
 
 
@@ -94,24 +102,28 @@
                         <!---Formbuilder Form--->
                         <form action="../control/controle-registro.php" method="POST">
                             <div class="dragArea row">
-                                <select name="id_aluno">
+                                <div class="col-md-12 form-group"> 
+                                    <select name="id_aluno" class="form-control">
                                     <?php
                                         require('../model/Aluno.Class.php');
                                         $aluno = new Aluno();
                                         $aluno->listar_alunos();
                                     ?>
-                                </select>
-                                <select name="motivo">
-                                    <option>banheiro</option>
-                                    <option>pessoal</option>
-                                    <option>consulta</option>
-                                    <option>lanche</option>
-                                    <option>transporte</option>
-                                    <option>projeto</option>
-                                    <option>alinhamento</option>
-                                </select>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <select name="motivo" class="form-control">
+                                        <option>banheiro</option>
+                                        <option>pessoal</option>
+                                        <option>consulta</option>
+                                        <option>lanche</option>
+                                        <option>transporte</option>
+                                        <option>projeto</option>
+                                        <option>alinhamento</option>
+                                    </select>
+                                </div>
                                 <div class="col-md-12 input-group-btn">
-                                    <input type="submit" class="btn btn-form btn-primary display-4" name="registro_turma" value="registrar">
+                                    <input type="submit" class="btn btn-form btn-primary display-4" name="cadastro_atraso" value="registrar">
                                 </div>
                             </div>
                         </form><!---Formbuilder Form--->

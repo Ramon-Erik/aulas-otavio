@@ -14,7 +14,7 @@ class Aluno {
     }
 
     public function listar_alunos() {
-        session_start();
+        // session_start();
         $ano = $_SESSION['ano'];
         $turma = $_SESSION['turma'];
 

@@ -95,17 +95,21 @@
                         <!---Formbuilder Form--->
                         <form action="../control/controle-registro.php" method="POST">
                             <div class="dragArea row">
-                                <select name="ano" class="form-control">
-                                    <option value="1">1° ANO</option>
-                                    <option value="2">2° ANO</option>
-                                    <option value="3">3° ANO</option>
-                                </select>
-                                <select name="turma" class="form-control">
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
+                                <div class="col-md-12 form-group">
+                                    <select name="ano" class="form-control">
+                                        <option value="1">1° ANO</option>
+                                        <option value="2">2° ANO</option>
+                                        <option value="3">3° ANO</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <select name="turma" class="form-control">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                    </select>
+                                </div>
                                 
 
                                 <div class="col-md-12 input-group-btn">
