@@ -37,5 +37,5 @@ if (isset($_POST['cadastro_atraso'])) {
     $registro = new Registro();
     $registro->cadastrar_registro($motivo, $id_aluno);
 
-    header("location: ../view/cadastrar-registro-2.php");
+    header("location: ../view/cadastrar-registro-1.php#next");
 }
