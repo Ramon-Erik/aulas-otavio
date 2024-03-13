@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<section class="menu cid-u6mKbH6svl" once="menu" id="menu1-1e">
+    <section class="menu cid-u6mKbH6svl" once="menu" id="menu1-1e">
         <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="hamburger">
@@ -41,18 +41,30 @@
                             <img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;">
                         </a>
                     </span>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">Salaberga</a></span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">EEEP Salaberga</a></span>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                     <li class="nav-item dropdown">
-                        <a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu"><span class="mbri-upload mbr-iconfont mbr-iconfont-btn"></span>
-                            Cadastrar</a>
-                        <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registros</a></div>
+                        <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu">
+                            <span class="mbri-upload mbr-iconfont mbr-iconfont-btn"></span>Cadastrar
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="text-white dropdown-item display-4" href="cadastrar-usuario.php">Usuario</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-aluno.php">Aluno</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-atraso.php">Atraso</a>
+                        </div>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Relatorio</a>
-                        <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registro</a></div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu">
+                            <span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Relatório
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="text-white dropdown-item display-4" href="cadastrar-usuario.php">Em construção</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-aluno.php">Em construção</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-atraso.php">Em construção</a>
+                        </div>
                     </li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobirise.co">
                         </a></li>
@@ -66,22 +78,14 @@
             </div>
         </nav>
     </section>
-
     <section class="engine"><a href="https://mobirise.info/s">bootstrap theme</a></section>
     <section class="header12 cid-u6mC0kz5qd mbr-fullscreen mbr-parallax-background" id="header12-13">
-
-
-
-        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
-        </div>
-
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);"></div>
         <div class="container  ">
             <div class="media-container">
                 <div class="col-md-12 align-center">
                     <h1 class="mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style display-1">Registro de atrasos</h1>
-                    <p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5">sistema para registro de atrasos para compromissos &nbsp;dentro do ambiente escolar.</p>
-
-
+                    <p class="mbr-text pb-3 mbr-white mbr-fonts-style display-5">sistema para registro de atrasos para compromissos &nbsp; dentro do ambiente escolar.</p>
                     <div class="icons-media-container mbr-white">
                         <div class="card col-12 col-md-6 col-lg-3">
                             <div class="icon-block">
