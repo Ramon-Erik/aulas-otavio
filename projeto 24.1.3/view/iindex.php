@@ -37,11 +37,11 @@
             <div class="menu-logo">
                 <div class="navbar-brand">
                     <span class="navbar-logo">
-                        <a href="https://mobirise.co">
+                        <a href="#">
                             <img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;">
                         </a>
                     </span>
-                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="https://mobirise.co">EEEP Salaberga</a></span>
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="iindex.php">EEEP Salaberga</a></span>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,7 +53,7 @@
                         <div class="dropdown-menu">
                             <a class="text-white dropdown-item display-4" href="cadastrar-usuario.php">Usuario</a>
                             <a class="text-white dropdown-item display-4" href="cadastrar-aluno.php">Aluno</a>
-                            <a class="text-white dropdown-item display-4" href="cadastrar-atraso.php">Atraso</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-registro-1.php">Atraso</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,19 +66,14 @@
                             <a class="text-white dropdown-item display-4" href="cadastrar-atraso.php">Em construção</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobirise.co">
-                        </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="iindex.php"></a>
+                    </li>
                 </ul>
-                <div class="navbar-buttons mbr-section-btn">
-                    <a class="btn btn-sm btn-primary display-4" href="https://mobirise.co">
-                        <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
-                        Try It Now!
-                    </a>
-                </div>
             </div>
         </nav>
     </section>
-    <section class="engine"><a href="https://mobirise.info/s">bootstrap theme</a></section>
+    <section class="engine"><a href="iindex.php">bootstrap theme</a></section>
     <section class="header12 cid-u6mC0kz5qd mbr-fullscreen mbr-parallax-background" id="header12-13">
         <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);"></div>
         <div class="container  ">
@@ -89,7 +84,7 @@
                     <div class="icons-media-container mbr-white">
                         <div class="card col-12 col-md-6 col-lg-3">
                             <div class="icon-block">
-                                <a href="https://mobirise.co/">
+                                <a href="iindex.php">
                                     <span class="mbr-iconfont mbri-users"></span>
                                 </a>
                             </div>
@@ -98,7 +93,8 @@
 
                         <div class="card col-12 col-md-6 col-lg-3">
                             <div class="icon-block">
-                                <a href="https://mobirise.co/">
+                                <a href="iindex.php">
+                        
                                     <span class="mbr-iconfont mbri-clock"></span>
                                 </a>
                             </div>
@@ -107,7 +103,7 @@
 
                         <div class="card col-12 col-md-6 col-lg-3">
                             <div class="icon-block">
-                                <a href="https://mobirise.co/">
+                                <a href="iindex.php">
                                     <span class="mbr-iconfont mbri-edit"></span>
                                 </a>
                             </div>
@@ -116,7 +112,7 @@
 
                         <div class="card col-12 col-md-6 col-lg-3">
                             <div class="icon-block">
-                                <a href="https://mobirise.co/">
+                                <a href="iindex.php">
                                     <span class="mbr-iconfont mbri-numbered-list"></span>
                                 </a>
                             </div>
@@ -216,9 +212,9 @@
                     <p class="mbr-text">
                         <strong>Links</strong>
                         <br>
-                        <br><a class="text-primary" href="https://mobirise.co/">Website builder</a>
-                        <br><a class="text-primary" href="https://mobirise.co/">Download for Windows</a>
-                        <br><a class="text-primary" href="https://mobirise.co/">Download for Mac</a>
+                        <br><a class="text-primary" href="iindex.php">Website builder</a>
+                        <br><a class="text-primary" href="iindex.php">Download for Windows</a>
+                        <br><a class="text-primary" href="iindex.php">Download for Mac</a>
                         <br>
                         <br><strong>Feedback</strong>
                         <br>
@@ -244,7 +240,7 @@
                     <div class="col-md-6">
                         <div class="social-list align-right">
                             <div class="soc-item">
-                                <a href="https://twitter.com/mobirise" target="_blank">
+                                <a href="iindex.php" target="_blank">
                                     <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
                                 </a>
                             </div>

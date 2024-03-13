@@ -51,23 +51,29 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                     <li class="nav-item dropdown">
-                        <a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu"><span class="mbri-upload mbr-iconfont mbr-iconfont-btn"></span>
-
-                            Cadastrar</a>
-                        <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registros</a></div>
+                        <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu">
+                            <span class="mbri-upload mbr-iconfont mbr-iconfont-btn"></span>Cadastrar
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="text-white dropdown-item display-4" href="cadastrar-usuario.php">Usuario</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-aluno.php">Aluno</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-registro-1.php">Atraso</a>
+                        </div>
                     </li>
-                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Relatorio</a>
-                        <div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="https://mobirise.co">Usuarios<br>Alunos<br>Registro</a></div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link link text-white dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu">
+                            <span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>Relatório
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="text-white dropdown-item display-4" href="cadastrar-usuario.php">Em construção</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-aluno.php">Em construção</a>
+                            <a class="text-white dropdown-item display-4" href="cadastrar-atraso.php">Em construção</a>
+                        </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobirise.co">
-                        </a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="https://mobirise.co"></a>
+                    </li>
                 </ul>
-                <div class="navbar-buttons mbr-section-btn">
-                    <a class="btn btn-sm btn-primary display-4" href="https://mobirise.co">
-                        <span class="mbri-save mbr-iconfont mbr-iconfont-btn "></span>
-                        Try It Now!
-                    </a>
-                </div>
             </div>
         </nav>
     </section>
