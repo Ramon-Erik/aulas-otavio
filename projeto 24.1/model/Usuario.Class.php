@@ -52,12 +52,13 @@ class Usuario {
             if ($resultado['senha'] == $senha) {
                 session_start();
                 $_SESSION['id_usuario'] = $resultado['id'];
+                $_SESSION['tipo'] = $resultado['tipo'];
                 switch ($resultado['tipo']) {
                     case 'admin':
                         header("location:../view/cadastrar-registro-1.php");
                         break;
                     case 'aluno':
-                        header("location: https://google.com");
+                        header("location: ../view/cadastrar-registro-1.php");
                         break;
                     default:
                     header("location: https://google.com");
