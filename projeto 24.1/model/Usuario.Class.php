@@ -2,7 +2,6 @@
 
 class Usuario {
     public function cadastrar_usuario($tipo, $senha, $email) {
-
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
         $consulta = "INSERT INTO usuario VALUES (null, :email, :senha, :tipo)";
 
@@ -11,33 +10,11 @@ class Usuario {
         $consulta_feita->bindValue(":senha", $senha);
         $consulta_feita->bindValue(":tipo", $tipo);
         $consulta_feita->execute();
-
-        // $id_ultimo_func = $pdo->prepare("SELECT id FROM usuarios ORDER BY id DESC LIMIT 1");
-        // $id_ultimo_func->execute();
-        // $id_func = $id_ultimo_func->fetch(PDO::FETCH_ASSOC);
-
-        // $consulta = "insert into contatos values(null, :valor ,:tipo, :id_usuario)";
-        // $consultar = $pdo->prepare($consulta);
-        // $consultar->bindValue(":tipo", $tipoContato);
-        // $consultar->bindValue(":valor", $valorContato);
-        // $consultar->bindValue(":id_usuario", $id_func['id']);
-        // $consultar->execute();
-
-        // $consulta = "insert into enderecos values(null, :rua, :numero, :cidade, :bairro, :uf, :id_usuario)";
-        // $consultar = $pdo->prepare($consulta);
-        // $consultar->bindValue(":rua", $rua);
-        // $consultar->bindValue(":numero", $num);
-        // $consultar->bindValue(":cidade", $cidade);
-        // $consultar->bindValue(":bairro", $bairro);
-        // $consultar->bindValue(":uf", $uf);
-        // $consultar->bindValue(":id_usuario", $id_func['id']);
-        // $consultar->execute();
-
+        
         // header('location:../view/login.html');
     }
 
     public function listar_usuarios() {
-
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
         $consulta = "select * from usuario order by tipo, email;";
         $consulta_feita = $pdo->prepare($consulta);
@@ -61,5 +38,39 @@ class Usuario {
         echo '</table>';
     }
 
-    
+    public function login($email, $senha) {
+        try {
+            $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
+            $consulta = 'select * from usuario where email = :email and senha = :senha';
+            
+            $consultar = $pdo->prepare($consulta);
+            $consultar->bindValue(":email", $email);
+            $consultar->bindValue(":senha", $senha);
+            $consultar->execute();
+            $resultado = $consultar->fetch(PDO::FETCH_ASSOC);
+            
+            if ($resultado['senha'] == $senha) {
+                session_start();
+                $_SESSION['id_usuario'] = $resultado['id'];
+                switch ($resultado['tipo']) {
+                    case 'admin':
+                        header("location:../view/cadastrar-registro-1.php");
+                        break;
+                    case 'aluno':
+                        header("location: https://google.com");
+                        break;
+                    default:
+                    header("location: https://google.com");
+                        break;
+                }
+            } else  {
+                var_dump($resultado);
+                echo '<pre>'. print_r($resultado).'</pre>';
+            }
+        } catch (PDOException $e) {
+            echo "Erro com a conexão " . $e;
+        } catch (Exception $e) {
+            echo "Erro genérico... " . $e;
+        }
+    }
 }
