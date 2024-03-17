@@ -1,5 +1,5 @@
 <?php 
-require('../model/Usuario.Class.php');
+require_once('../model/Usuario.Class.php');
 if (isset($_POST['logar'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];

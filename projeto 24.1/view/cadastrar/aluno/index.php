@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre um aluno</title>
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="../../css/registro.css">
 </head>
 
 <body>
     <main>
         <h1>Registrar aluno</h1>
-        <form action="../control/controle-aluno.php" method="POST">
+        <form action="../../../control/controle-aluno.php" method="POST">
             <div class="linha">
                 <input type="text" name="nome" id="nomeId" placeholder="Seu nome">
             </div>

@@ -12,7 +12,7 @@ class Registro {
         $consulta_feita->bindValue(":motivo", $motivo);
         $consulta_feita->execute();
 
-        header("location: ../view/cadastrar-registro-1.php");
+        header("location: ../view/registrar-atraso/ano-turma.php");
     }
 
     public function relatorio_turma() {

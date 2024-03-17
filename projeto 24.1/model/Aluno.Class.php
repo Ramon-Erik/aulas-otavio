@@ -4,7 +4,7 @@ class Aluno {
     public function cadastrar_aluno($turma, $nome, $ano) {
 
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
-        $consulta = "INSERT INTO aluno VALUES (null,:turma, :nome, :ano)";
+        $consulta = "INSERT INTO aluno VALUES (null, :ano, :turma, :nome)";
 
         $consulta_feita = $pdo->prepare($consulta);
         $consulta_feita->bindValue(":nome", $nome);
@@ -30,6 +30,26 @@ class Aluno {
         foreach ($consulta_feita as $value) {
             echo '<option value=' . $value['id'] . '>' . $value['nome'] . '</option>';
         }
+    }
+    public function listar_aluno($id) {
+        $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
+        $consulta = "select * from aluno inner join usuario on aluno.id = usuario.id_aluno where usuario.id = :id;";
+        $consulta_feita = $pdo->prepare($consulta);
+        $consulta_feita->bindValue(":id", $id);
+        $consulta_feita->execute();
+        echo $id;
+
+        echo '<div class="linha"><select name="id_aluno" disabled="disabled">';
+        foreach ($consulta_feita as $value) {
+            echo '<option value=' . $value['id'] . '>' . $value['ano'] . '</option>';
+        }
+        echo '</select></div>';
+        
+        echo '<div class="linha"><select name="id_aluno" disabled="disabled">';
+        foreach ($consulta_feita as $value) {
+            echo '<option value=' . $value['id'] . '>' . $value['nome'] . '</option>';
+        }
+        echo '</select></div>';
     }
     
     // public function 

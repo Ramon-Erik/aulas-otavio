@@ -55,10 +55,10 @@ class Usuario {
                 $_SESSION['tipo'] = $resultado['tipo'];
                 switch ($resultado['tipo']) {
                     case 'admin':
-                        header("location:../view/cadastrar-registro-1.php");
+                        header("location:../view/registrar-atraso/ano-turma.php");
                         break;
                     case 'aluno':
-                        header("location: ../view/cadastrar-registro-1.php");
+                        header("location: ../view/relatorios/index.php");
                         break;
                     default:
                     header("location: https://google.com");

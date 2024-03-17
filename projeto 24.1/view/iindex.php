@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,20 +16,27 @@
         <div class="links">
             <ul>
                 <li>
-                    <a href="login.php">Login</a>
+                    <a href="login/index.php">Login</a>
                 </li>
-                <li>
-                    <a href="#">Cadastrar usuário</a>
-                </li>
-                <li>
-                    <a href="#">Cadastrar aluno</a>
-                </li>
-                <li>
-                    <a href="#">Regstrar atraso</a>
-                </li>
-                <li>
-                    <a href="#">Gerar relatório</a>
-                </li>
+                <!-- <li>
+                    <a href="relatorios/"></a>
+                </li> -->
+                <?php
+                if (isset($_SESSION['tipo']) and $_SESSION['tipo'] == 'admin') {
+                    echo '<li>
+                        <a href="#">Cadastrar usuário</a>
+                    </li>
+                    <li>
+                        <a href="#">Cadastrar aluno</a>
+                    </li>
+                    <li>
+                        <a href="#">Regstrar atraso</a>
+                    </li>
+                    <li>
+                        <a href="#">Gerar relatório</a>
+                    </li>';
+                }
+                ?>
             </ul>
         </div>
     </main>

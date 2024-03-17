@@ -1,5 +1,5 @@
 <?php
-require('../model/Registro.Class.php');
+require_once('../model/Registro.Class.php');
 
 if (isset($_POST['registro_turma'])) {
   $ano = $_POST['ano'];
@@ -20,7 +20,7 @@ if (isset($_POST['prox'])) {
   $_SESSION['ano'] = $ano;
   $_SESSION['turma'] = $turma;
 
-  header("location: ../view/cadastrar-registro-2.php");
+  header("location: ../view/registrar-atraso/nome-motivo.php");
 }
 
 if (isset($_POST['cadastro_atraso'])) {
