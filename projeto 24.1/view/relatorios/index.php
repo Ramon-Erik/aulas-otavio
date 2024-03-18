@@ -2,6 +2,9 @@
     session_start();
     if ((isset($_SESSION['tipo']))) {
         $id = $_SESSION['id_usuario'];
+        if ($_SESSION['tipo'] = 'aluno') {
+            header('location: atrasos-aluno/index.php');
+        }
     } else {
         header('location: ..login/index.php');
     }
@@ -17,12 +20,13 @@
 </head>
 <body>
     <main>
-        <h1>Clique no botão para gerar seu relatório</h1>
+        <h1>Personalize seu relatório</h1>
         <?php 
             if ($_SESSION['tipo'] == 'aluno') {
                 require_once('../../model/Aluno.Class.php');
                 $aluno = new Aluno;
-                $aluno->listar_aluno($_SESSION['id_usuario']);
+                $dados = $aluno->get_dados_aluno($_SESSION['id_usuario']);
+                echo '<p>R</p>';
             }
         ?>
     </main>

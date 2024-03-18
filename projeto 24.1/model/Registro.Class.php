@@ -16,7 +16,7 @@ class Registro {
     }
 
     public function relatorio_turma() {
-        require('../../../LIB_FPDF/fpdf.php');
+        require_once('../../../LIB_FPDF/fpdf.php');
 
         session_start();
 
