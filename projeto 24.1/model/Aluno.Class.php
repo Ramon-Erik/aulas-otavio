@@ -36,7 +36,7 @@ class Aluno {
 
     public function relatorio_atrasos_individual($id) {
         $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
-        $consulta = "select aluno.nome, aluno.turma, aluno.ano, registro.motivo, registro.data, email.endereco_email from aluno inner join usuario on aluno.id = usuario.id_aluno inner join registro on aluno.id = registro.id_aluno inner join email on registro.id_usuario = email.id_usuario where usuario.id = :id order by registro.data ASC;";
+        $consulta = "select aluno.nome, aluno.turma, aluno.ano, registro.motivo, registro.data, contato.endereco_email from aluno inner join usuario on aluno.id = usuario.id_aluno inner join registro on aluno.id = registro.id_aluno inner join contato on registro.id_usuario = contato.id_usuario where usuario.id = :id order by registro.data ASC;";
 
         $consulta_feita = $pdo->prepare($consulta);
         $consulta_feita->bindValue(":id", $id);

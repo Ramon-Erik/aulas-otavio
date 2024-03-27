@@ -37,6 +37,7 @@ create table email (
 );
 
 INSERT INTO `email` (`id`, `endereco_email`, `id_usuario`) VALUES ('1', 'ro@gmail.com', '1');
+INSERT INTO `contato`(`id`, `endereco_email`, `id_usuario`) VALUES (null, 'ra@gmail.com', 3);
 
 -- Para o ano 1, turma A
 INSERT INTO aluno (ano, turma, nome) 

@@ -2,7 +2,7 @@
     session_start();
     if ((isset($_SESSION['tipo']))) {
         $id = $_SESSION['id_usuario'];
-        if ($_SESSION['tipo'] = 'aluno') {
+        if ($_SESSION['tipo'] == 'aluno') {
             header('location: atrasos-aluno/index.php');
         }
     } else {
@@ -21,14 +21,18 @@
 <body>
     <main>
         <h1>Personalize seu relatório</h1>
-        <?php 
-            if ($_SESSION['tipo'] == 'aluno') {
-                require_once('../../model/Aluno.Class.php');
-                $aluno = new Aluno;
-                $dados = $aluno->get_dados_aluno($_SESSION['id_usuario']);
-                echo '<p>R</p>';
-            }
-        ?>
+        <div class="linha">
+            <select name="" id=""></select>
+        </div>
+        <!-- <?php 
+            // if ($_SESSION['tipo'] == 'aluno') {
+            //     require_once('../../model/Aluno.Class.php');
+            //     $aluno = new Aluno;
+            //     $dados = $aluno->get_dados_aluno($_SESSION['id_usuario']);
+            //     echo '<p>R</p>';
+            // }
+        ?> 
+        -->
     </main>
 </body>
 </html>
