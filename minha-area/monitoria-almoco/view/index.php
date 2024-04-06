@@ -1,3 +1,9 @@
+<?php 
+    session_start();
+    if (isset($_SESSION['ultima_resposta'])) {
+        echo '<script>alert("Parece que você já respondeu o formulário hoje...")</script>';
+    }   
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,12 +17,11 @@
 </head>
 
 <body>
-    <header></header> 
     <main>
         <div class="cabecalho">
             <div class="linha-cab">
                 <h1>Avaliação semanal da comida</h1>
-                <h5>Preencha cada campo com cuidado e responsabilidade!</h5>
+                <h5>Só é possivel responder uma vez por dia!</h5>
             </div>
         </div>
         <form action="../control/controle-index.php" method="post">
@@ -36,6 +41,7 @@
                 <input type="reset" value="Limpar" class="btn limpar">
             </div>
         </form>
+        
     </main>
     <footer>
         <p>Site desenvolvido por <a href="https://instagram.com/29erik_" target="_blank" rel="noopener noreferrer">Ramon Erik (Informática 2022-2024)</a></p>

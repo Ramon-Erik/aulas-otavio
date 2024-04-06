@@ -1,19 +1,23 @@
 <?php
 class Avaliacao
 {
-    public function cadastrar_avaliacao($av)
-    {
-        $pdo = new pdo("mysql:host=localhost; dbname=monitoria_alimentar_salaberga", "root", "");
-        $consulta = "INSERT INTO avaliacao VALUES (null,:av, curdate(), curtime())";
+    public function cadastrar_avaliacao($av) {
+        session_start();
+        if (!isset($_SESSION['ultima_resposta']) || time() >=  $_SESSION['ultima_resposta'][1]) {
+            $pdo = new pdo("mysql:host=localhost; dbname=monitoria_alimentar_salaberga", "root", "");
+            $consulta = "INSERT INTO avaliacao VALUES (null,:av, curdate(), curtime())";
+            
+            $consulta_feita = $pdo->prepare($consulta);
+            $consulta_feita->bindValue(":av", $av);
+            $consulta_feita->execute();
+            $_SESSION['ultima_resposta'] = [time(), strtotime('tomorrow')];
+            header("location: ../view/index.php");
+        } else {
+            header("location: ../view/index.php");
+        }
 
-        $consulta_feita = $pdo->prepare($consulta);
-        $consulta_feita->bindValue(":av", $av);
-        $consulta_feita->execute();
-
-        header("location: ../view/index.html");
     }
-    public function gerar_relatorio()
-    {
+    public function gerar_relatorio() {
         $pdo = new pdo("mysql:host=localhost; dbname=monitoria_alimentar_salaberga", "root", "");
         $consulta = "SELECT DISTINCT dia FROM avaliacao;";
         $consulta_feita = $pdo->prepare($consulta);
@@ -29,14 +33,11 @@ class Avaliacao
             $consulta_total_feita->bindValue(':dia', $dia);
             $consulta_total_feita->execute();
             foreach ($consulta_total_feita as $valor) {
-                // echo ' total: ' . $valor[1] + $valor[2] + $valor[3] . '<br>';
+                // echo ' total: ' . $valor[1] + $valor[2] + $valor[3] . '<br>'; echo ' ruim ' . $valor[1] . '<br>'; echo ' bom ' . $valor[2] . '<br>'; echo ' regular ' . $valor[3] . '<br>';
                 $total =  $valor[1] + $valor[2] + $valor[3];
                 $total_ruim = $valor[1];
-                // echo ' ruim ' . $valor[1] . '<br>';
                 $total_bom = $valor[2];
-                // echo ' bom ' . $valor[2] . '<br>';
                 $total_regular = $valor[3];
-                // echo ' regular ' . $valor[3] . '<br>';
                 echo "<p>Total de avaliações do dia: $total; Bom: $total_bom; Regular: $total_regular; Ruim: $total_ruim </p>";
             }
             echo '<div class="charts" id="chart_div_' . $dia . '"></div></div>';
@@ -57,6 +58,7 @@ class Avaliacao
                     var chart = new google.visualization.PieChart(document.getElementById('chart_div_" . $dia . "'));
                     chart.draw(data, options);
             }</script>";
+
         }
     }
 }
