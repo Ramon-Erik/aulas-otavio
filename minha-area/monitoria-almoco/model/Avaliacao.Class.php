@@ -1,6 +1,5 @@
 <?php
-class Avaliacao
-{
+class Avaliacao {
     public function cadastrar_avaliacao($av) {
         session_start();
         if (!isset($_SESSION['ultima_resposta']) || time() >=  $_SESSION['ultima_resposta'][1]) {
@@ -19,7 +18,7 @@ class Avaliacao
     }
     public function gerar_relatorio() {
         $pdo = new pdo("mysql:host=localhost; dbname=monitoria_alimentar_salaberga", "root", "");
-        $consulta = "SELECT DISTINCT dia FROM avaliacao;";
+        $consulta = "SELECT DISTINCT dia FROM avaliacao order by id DESC;";
         $consulta_feita = $pdo->prepare($consulta);
         $consulta_feita->execute();
 
