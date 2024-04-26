@@ -1,8 +1,8 @@
 <?php 
-    session_start();
-    if (isset($_SESSION['ultima_resposta'])) {
-        echo '<script>alert("Parece que você já respondeu o formulário hoje...")</script>';
-    }   
+    // session_start();
+    // if (isset($_SESSION['ultima_resposta'])) {
+    //     echo '<script>alert("Parece que você já respondeu o formulário hoje...")</script>';
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

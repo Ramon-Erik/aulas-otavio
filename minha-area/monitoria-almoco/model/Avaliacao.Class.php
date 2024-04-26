@@ -12,7 +12,7 @@ class Avaliacao {
             $_SESSION['ultima_resposta'] = [time(), strtotime('tomorrow')];
             header("location: ../view/index.php");
         } else {
-            header("location: ../view/index.php");
+            header("location: ../view/erro.php?err=vote");
         }
 
     }
