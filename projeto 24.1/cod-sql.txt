@@ -29,6 +29,16 @@ ALTER TABLE `registro` CHANGE `motivo` `motivo` ENUM('banheiro','pessoal', 'cons
 INSERT INTO `usuario`(`id`, `tipo`, `senha`, `email`) VALUES (null, 'admin', 'qwert', 'ro@gmail.com');
 INSERT INTO `usuario`(`id`, `tipo`, `senha`, `email`) VALUES (null, 'admin', 'qwert', 'dri@gmail.com');
 
+create table email (
+    id int primary key not null AUTO_INCREMENT, 
+    endereco_email varchar(150),
+    id_usuario int,
+    FOREIGN key (id_usuario) REFERENCES usuario(id)
+);
+
+INSERT INTO `email` (`id`, `endereco_email`, `id_usuario`) VALUES ('1', 'ro@gmail.com', '1');
+INSERT INTO `contato`(`id`, `endereco_email`, `id_usuario`) VALUES (null, 'ra@gmail.com', 3);
+
 -- Para o ano 1, turma A
 INSERT INTO aluno (ano, turma, nome) 
 VALUES ('1', 'A', 'Lucas Oliveira Santos'),

@@ -41,7 +41,7 @@ class Usuario {
     public function login($email, $senha) {
         try {
             $pdo = new pdo("mysql:host=localhost; dbname=registro_atraso_ramon", "root", "");
-            $consulta = 'select * from usuario where email = :email and senha = :senha';
+            $consulta = 'select * from usuario inner join contato on usuario.id = contato.id_usuario where contato.endereco_email = :email and usuario.senha = :senha';
             
             $consultar = $pdo->prepare($consulta);
             $consultar->bindValue(":email", $email);
@@ -55,18 +55,20 @@ class Usuario {
                 $_SESSION['tipo'] = $resultado['tipo'];
                 switch ($resultado['tipo']) {
                     case 'admin':
-                        header("location:../view/cadastrar-registro-1.php");
+                        header("location:../view/registrar-atraso/ano-turma.php");
                         break;
                     case 'aluno':
-                        header("location: ../view/cadastrar-registro-1.php");
+                        header("location: ../view/relatorios/index.php");
                         break;
                     default:
-                    header("location: https://google.com");
+                        echo 'deu erro ai, default '. $resultado['tipo'];
+                        echo "senha certa pesquisa: " . $resultado['senha'] . ' = senha passada ' . $senha . '<pre>';
+                        print_r($resultado);
                         break;
                 }
             } else  {
                 var_dump($resultado);
-                echo '<pre>'. print_r($resultado).'</pre>';
+                echo '<p>erro ao verificar senha</p><pre>'. print_r($resultado).'</pre>';
             }
         } catch (PDOException $e) {
             echo "Erro com a conexão " . $e;

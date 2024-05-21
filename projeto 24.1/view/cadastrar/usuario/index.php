@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Usuário</title>
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="../../css/registro.css">
 </head>
 
 <body>
     <main>
         <h1>Registrar Usuário</h1>
-        <form action="../control/controle-usuario.php" method="POST">
+        <form action="../../../control/controle-usuario.php" method="POST">
             <div class="linha">
                 <!-- <label for="emailId">Seu email</label> -->
                 <input type="email" name="email" id="emailId"  placeholder="Seu email" required>
