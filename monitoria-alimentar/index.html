@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfação Alimentar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header></header> 
+    <main>
+        <div class="cabecalho">
+            <div class="linha-cab">
+                <h1>Avaliação semanal da comida</h1>
+                <h5>Preencha cada campo com cuidado e responsabilidade!</h5>
+            </div>
+        </div>
+        <form>
+            
+            <div class="linha">
+                <label for="satisfacao">
+                    Sua satisfação
+                </label>
+                <select name="Satisfação" id="satisfacao">
+                    <option value="pessima">Péssima</option>
+                    <option value="regular">Regular</option>
+                    <option value="boa">Boa</option>
+                    <option value="otima">Ótima</option>
+                </select>
+            </div>
+            <div class="area-btn">
+                <input type="submit" value="Enviar" class="btn mandar"/>
+                <input type="hidden" name="data" value="x-sheetmonkey-current-date-time"  class="input-field"/>
+                <input type="reset" value="Limpar" class="btn limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="http://instagram.com/29erik_" target="_blank" rel="noopener noreferrer">Ramon Erik (Informática 2022-2024)</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
